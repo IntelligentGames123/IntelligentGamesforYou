@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "translation": "KJV",
+  "careerNote": "Career paths are general guidance. Pay in Nigeria varies widely by employer, city and experience, so check current Nigerian job listings. 3MTT is the Federal Government's 3 Million Technical Talent programme; confirm current tracks on the official 3MTT website.",
+  "realms": [
+    { "id": "garden", "name": "Garden & Patriarchs", "books": "Genesis", "color": "#5fb36b" },
+    { "id": "exodus", "name": "Exodus & Wilderness", "books": "Exodus - Joshua", "color": "#f4b324" },
+    { "id": "judges", "name": "Judges & Kings", "books": "Judges - 2 Kings", "color": "#e07a5f" },
+    { "id": "prophets", "name": "Prophets & Visions", "books": "Isaiah - Zechariah", "color": "#9d8df1" },
+    { "id": "gospels", "name": "Gospels", "books": "Matthew - John", "color": "#4cc9f0" },
+    { "id": "acts", "name": "Acts & Revelation", "books": "Acts - Revelation", "color": "#ffd166" }
+  ],
+  "careers": {
+    "Cloud engineer": { "start": "3MTT Cloud Computing track; free cloud courses (AWS, Azure, Google); computer science or IT at university/polytechnic", "where": "Banks, fintechs, telecoms, data centres in Lagos and Abuja, remote work" },
+    "Network engineer": { "start": "Computer/electrical engineering degree or ND/HND; Cisco CCNA or CompTIA Network+", "where": "Telecoms companies, ISPs, banks, government agencies" },
+    "Agritech specialist": { "start": "Agriculture, agricultural engineering or computer science; agritech hubs and training", "where": "Agritech start-ups, farms and cooperatives, state agriculture ministries" },
+    "Hydrogeologist": { "start": "Geology or water resources engineering degree; COMEG registration", "where": "Borehole and water companies, state water boards, NGOs" },
+    "Data analyst": { "start": "3MTT Data Analysis & Visualisation track; Excel, SQL and Python; any numerate degree", "where": "Banks, fintechs, NBS, NCDC, NGOs, consulting firms, remote work" },
+    "Solar installer": { "start": "Technical college or ND in electrical engineering; solar installation certification", "where": "Solar companies, mini-grid developers, self-employment" },
+    "Electrical / renewable-energy engineer": { "start": "Electrical engineering degree; COREN registration", "where": "Power companies, mini-grids, oil & gas, manufacturing" },
+    "Robotics / embedded engineer": { "start": "Electrical, mechatronics or computer engineering; robotics clubs; Arduino projects", "where": "Manufacturing, oil & gas automation, start-ups, research" },
+    "Software developer": { "start": "3MTT Software Development track; coding bootcamps; computer science; a portfolio on GitHub", "where": "Fintechs, banks, start-ups in Yaba and Abuja, remote work for global firms" },
+    "QA tester": { "start": "3MTT Quality Assurance track; software testing certificates (e.g. ISTQB)", "where": "Fintechs, software companies, banks, remote work" },
+    "Agricultural researcher": { "start": "Agriculture or crop science degree, then a master's", "where": "Research institutes (e.g. IITA in Ibadan), universities, seed companies" },
+    "Epidemiologist": { "start": "Medicine, nursing, public health or biology, then an MPH", "where": "NCDC, state health ministries, WHO, NGOs, hospitals" },
+    "Statistician": { "start": "Statistics or mathematics degree", "where": "NBS, CBN, banks, research firms" },
+    "AI / ML engineer": { "start": "3MTT AI/Machine Learning and Data Science tracks; maths and Python", "where": "Fintechs, telecoms, health tech, remote work" },
+    "Product manager": { "start": "3MTT Product Management track; any degree plus tech experience", "where": "Fintechs, start-ups, banks" },
+    "Civil engineer": { "start": "Civil engineering degree; COREN registration", "where": "Construction firms, state ministries of works, consultancies" },
+    "Quantity surveyor": { "start": "Quantity surveying degree or HND; NIQS membership", "where": "Construction firms, developers, consultancies" },
+    "Architect": { "start": "Architecture degree; ARCON registration", "where": "Design firms, developers, self-employment" },
+    "Data scientist": { "start": "3MTT Data Science track; statistics, maths and Python", "where": "Banks, fintechs, telecoms, research, remote work" },
+    "Telecoms engineer": { "start": "Electrical/electronic engineering degree", "where": "Telecoms operators, tower companies, ISPs" },
+    "Cybersecurity analyst": { "start": "3MTT Cybersecurity track; CompTIA Security+; computing degree", "where": "Banks, fintechs, telecoms, government (NITDA), remote work" },
+    "Animator / game developer": { "start": "3MTT Animation and Game Development tracks; Blender (free); game engines; a portfolio", "where": "Nollywood VFX, animation studios, game studios, advertising, remote work" }
+  },
+  "levels": [
+    {
+      "id": "jacob-ladder", "realm": "garden", "canon": "protestant", "launch": true,
+      "title": "The Ladder of Messages", "ref": "Genesis 28:10-17",
+      "verse": "...the angels of God ascending and descending on it.", "verseRef": "Genesis 28:12 (KJV)",
+      "skill": "Cloud computing & networks", "badge": "Ladder Linker",
+      "story": "Jacob is running away from home. He is tired, alone and afraid. At night he lies down with a stone for a pillow. In a dream he sees a ladder reaching from earth to heaven, with God's angels going up and down it. At the top, God promises: \"I am with thee, and will keep thee in all places whither thou goest.\" Jacob wakes up amazed: \"Surely the LORD is in this place; and I knew it not.\"",
+      "angelLine": "Fear not! Messages go up and come down, like we do on this ladder. Tolu in Lagos wants to video-call her grandma in Ibadan. Come, let's see how her message travels.",
+      "brief": "Tolu presses \"call\". Her video is cut into small packets that travel from phone to mast, along fibre cable, to a data centre and back down to Grandma's phone. Cloud and network engineers build these paths. Cloud Computing is a 3MTT track.",
+      "careers": ["Cloud engineer", "Network engineer"],
+      "mission": { "type": "order", "prompt": "Put the hops in order: Tolu's video travels UP the ladder to the data centre.", "items": ["Tolu's phone", "Network mast (tower)", "Fibre-optic cable", "Data centre in Lagos"], "hint": "Start with the phone in Tolu's hand. Phones talk to the nearest mast by radio." },
+      "challenges": [
+        { "type": "sort", "prompt": "Is it a client (asks), a server (answers), or part of the network (carries)?", "bins": ["Client", "Server", "Network"], "items": [
+          { "t": "Tolu's phone", "bin": "Client" }, { "t": "Computer in a data centre that stores videos", "bin": "Server" },
+          { "t": "Network mast on a rooftop", "bin": "Network" }, { "t": "Undersea cable landing at Lagos", "bin": "Network" },
+          { "t": "Grandma's tablet", "bin": "Client" }, { "t": "Bank computer that answers your app", "bin": "Server" } ] },
+        { "type": "numeric", "prompt": "Tolu buys 3,000 MB of data. A 1-hour video call uses about 600 MB. How many hours of calls can she make?", "answer": 5, "unit": "hours", "hint": "3,000 ÷ 600" },
+        { "type": "choice", "prompt": "Tolu wants to save data. Which is the BEST tip?", "options": ["Always stream videos in the highest quality", "Use Wi-Fi when available and lower video quality", "Leave all apps updating on mobile data", "Turn the phone off and on"], "a": 1, "why": "Lower quality video and Wi-Fi save a lot of data and money." }
+      ],
+      "quiz": [
+        { "q": "What are the small pieces a message is split into?", "options": ["Packets", "Parcels", "Pixels", "Pages"], "a": 0, "why": "Packets travel quickly and are put back together at the other end." },
+        { "q": "In Jacob's dream, what were the angels doing?", "options": ["Sleeping", "Going up and coming down", "Building the ladder", "Guarding the gate"], "a": 1, "why": "Genesis 28:12: ascending and descending." },
+        { "q": "What does a phone connect to first?", "options": ["The data centre", "The nearest mast (tower)", "The satellite on the moon", "The bank"], "a": 1, "why": "Phones send radio signals to the nearest mast." },
+        { "q": "What did God promise Jacob?", "options": ["Gold", "A camel", "\"I am with thee\"", "A crown"], "a": 2, "why": "Genesis 28:15: God is with you wherever you go." },
+        { "q": "Cloud Computing is one of the tracks in which national programme?", "options": ["NYSC", "3MTT", "JAMB", "WAEC"], "a": 1, "why": "3MTT (3 Million Technical Talent) trains Nigerians in tech skills." }
+      ],
+      "benefits": { "faith": "God is with you wherever you go, even far from home.", "personal": "You understand data bundles and how to save data and money.", "professional": "Cloud and network skills are needed by every Nigerian bank, fintech and telecoms company." },
+      "deeper": "Python idea: packets = [video[i:i+600] for i in range(0, len(video), 600)] splits data into chunks."
+    },
+    {
+      "id": "hagar-well", "realm": "garden", "canon": "protestant", "launch": true,
+      "title": "The Well in the Wilderness", "ref": "Genesis 21:14-19",
+      "verse": "And God opened her eyes, and she saw a well of water.", "verseRef": "Genesis 21:19 (KJV)",
+      "skill": "Agritech & data maps", "badge": "Borehole Finder",
+      "story": "Hagar and her son Ishmael wander in the desert of Beersheba. The water bottle is empty. Hagar sits down and weeps. Then the angel of God calls from heaven: \"What aileth thee, Hagar? fear not; for God hath heard the voice of the lad.\" God opens her eyes and she sees a well of water. She fills the bottle and gives the boy a drink, and God promises a future for her son.",
+      "angelLine": "God hears the cry of the overlooked. Ladi's family farm near Kano needs water for the dry season. Open your eyes to the data and find the best place for a borehole.",
+      "brief": "Ladi used a moisture sensor across the farm. Each square on the map shows a reading. Agritech workers and hydrogeologists use data maps like this to site boreholes and plan irrigation.",
+      "careers": ["Agritech specialist", "Hydrogeologist", "Data analyst"],
+      "mission": { "type": "grid", "prompt": "Soil moisture (%) on Ladi's farm. Tap the square with the HIGHEST moisture: drill there!", "cells": [[12, 18, 15, 10], [20, 34, 22, 14], [16, 25, 61, 19], [9, 14, 21, 11]], "answer": [2, 2], "hint": "Find the biggest number." },
+      "challenges": [
+        { "type": "grid", "prompt": "Depth to water (metres). Shallower = cheaper to drill. Tap the SHALLOWEST spot.", "cells": [[30, 26, 22, 40], [18, 9, 25, 33], [27, 21, 14, 29], [35, 31, 28, 24]], "answer": [1, 1], "hint": "Find the smallest number." },
+        { "type": "grid", "prompt": "The borehole must be in the bottom row, next to the road where the drilling truck can reach. Pick the highest moisture in that row.", "cells": [[70, 22, 18, 15], [25, 30, 28, 19], [20, 26, 35, 24], [17, 44, 29, 38]], "answer": [3, 1], "hint": "Ignore the 70: the truck can't reach it. Compare only the bottom row." },
+        { "type": "numeric", "prompt": "Each tomato plant needs about 2 litres of water a day. The borehole pump gives 1,200 litres a day. How many plants can Ladi water?", "answer": 600, "unit": "plants", "hint": "1,200 ÷ 2" }
+      ],
+      "quiz": [
+        { "q": "Why was Hagar weeping?", "options": ["She lost her way in a city", "The water had run out in the desert", "She lost a coin", "Her tent fell"], "a": 1, "why": "Genesis 21:15-16." },
+        { "q": "What did God open so Hagar could see the well?", "options": ["The gate", "The sky", "Her eyes", "A cave"], "a": 2, "why": "\"God opened her eyes\" (Genesis 21:19)." },
+        { "q": "What does a moisture sensor measure?", "options": ["How wet the soil is", "How hot the sun is", "How tall plants are", "Phone signal"], "a": 0, "why": "Farmers use moisture data to water at the right time and save water." },
+        { "q": "Why is a shallow borehole often cheaper?", "options": ["It's prettier", "Less drilling is needed", "It uses more pipes", "It's always deeper"], "a": 1, "why": "Drilling costs rise with depth." },
+        { "q": "What is agritech?", "options": ["Technology that helps farming", "A type of yam", "A football club", "A bank"], "a": 0, "why": "Agritech uses sensors, apps and data to grow more food." }
+      ],
+      "benefits": { "faith": "God sees and hears people others overlook, and He sees and hears you.", "personal": "You can read a data map to make a smart choice.", "professional": "Agriculture employs millions of Nigerians, and agritech skills help farmers grow more food." },
+      "deeper": "Python idea: best = max(((v, r, c) for r, row in enumerate(cells) for c, v in enumerate(row))) finds the highest reading."
+    },
+    {
+      "id": "burning-bush", "realm": "exodus", "canon": "protestant", "launch": true,
+      "title": "The Bush That Was Not Consumed", "ref": "Exodus 3:1-12",
+      "verse": "...the bush burned with fire, and the bush was not consumed.", "verseRef": "Exodus 3:2 (KJV)",
+      "skill": "Energy & safety: fire, generators, solar", "badge": "Power Guardian",
+      "story": "Moses is looking after sheep near Mount Horeb. The angel of the LORD appears to him in a flame of fire from the middle of a bush. The bush is burning, but it does not burn up! Moses turns aside to look. God calls, \"Moses, Moses... put off thy shoes from off thy feet, for the place whereon thou standest is holy ground.\" God sends ordinary Moses to lead His people to freedom.",
+      "angelLine": "This fire is a holy wonder, not one to explain. But ordinary fire and power follow rules God built into creation. When NEPA takes light, Chidi's family in Enugu needs power safely. Learn the rules and protect lives.",
+      "brief": "An ordinary fire needs fuel, heat and oxygen: the fire triangle. Generators burn fuel and give off carbon monoxide, a poison gas you can't see or smell. Solar panels make power with no fumes. Solar installers and electrical engineers keep Nigerian homes powered safely.",
+      "careers": ["Solar installer", "Electrical / renewable-energy engineer"],
+      "mission": { "type": "sort", "prompt": "Sort each item into the side of the fire triangle it belongs to.", "bins": ["Fuel", "Heat", "Oxygen"], "items": [
+        { "t": "Firewood", "bin": "Fuel" }, { "t": "A match", "bin": "Heat" }, { "t": "Air", "bin": "Oxygen" },
+        { "t": "Petrol", "bin": "Fuel" }, { "t": "A hot iron left on cloth", "bin": "Heat" }, { "t": "Harmattan wind", "bin": "Oxygen" } ], "hint": "Fuel is what burns. Heat starts it. Oxygen comes from air." },
+      "challenges": [
+        { "type": "choice", "prompt": "Where is the SAFEST place to run Chidi's family generator?", "options": ["Inside the parlour, so it isn't stolen", "In the garage with the door closed", "Outside, far from windows and doors", "Under the bedroom window"], "a": 2, "why": "Generator fumes contain carbon monoxide, which can kill. It has no smell. Always run generators outside, far from windows and doors." },
+        { "type": "numeric", "prompt": "Solar maths: a 200-watt panel gets about 5 hours of strong sun a day. How many watt-hours of energy does it make? (watts × hours)", "answer": 1000, "unit": "Wh", "hint": "200 × 5" },
+        { "type": "numeric", "prompt": "At night Chidi's home runs a fan (50 W), a TV (60 W) and 4 LED bulbs (10 W each) for 6 hours. How many watt-hours is that?", "answer": 900, "unit": "Wh", "hint": "Total watts = 50 + 60 + 40 = 150. Then × 6." }
+      ],
+      "quiz": [
+        { "q": "What was unusual about the burning bush?", "options": ["It was blue", "It was not consumed", "It was underwater", "It sang"], "a": 1, "why": "Exodus 3:2." },
+        { "q": "What are the three parts of the fire triangle?", "options": ["Wood, kerosene, coal", "Fuel, heat, oxygen", "Red, orange, yellow", "Water, sand, foam"], "a": 1, "why": "Remove one and an ordinary fire goes out." },
+        { "q": "Why are generator fumes so dangerous?", "options": ["They are noisy", "They contain carbon monoxide, which you can't see or smell", "They make the room cold", "They drain your phone"], "a": 1, "why": "Never run a generator indoors." },
+        { "q": "Why did Moses take off his shoes?", "options": ["They were wet", "He was on holy ground", "To run faster", "They were too tight"], "a": 1, "why": "Exodus 3:5." },
+        { "q": "Which power source gives NO fumes at home?", "options": ["Petrol generator", "Diesel generator", "Solar panels", "Kerosene lamp"], "a": 2, "why": "Solar turns sunlight into electricity cleanly." }
+      ],
+      "benefits": { "faith": "God calls ordinary people, like Moses the shepherd, to do great things.", "personal": "You can protect your family from fire and generator fumes.", "professional": "Solar and power skills are in high demand, because Nigeria needs reliable electricity." },
+      "deeper": "Energy (Wh) = power (W) × time (h). Batteries are rated in Wh or Ah. Wh = Ah × volts."
+    },
+    {
+      "id": "balaam-donkey", "realm": "exodus", "canon": "protestant", "launch": true,
+      "title": "The Donkey Who Saw", "ref": "Numbers 22:21-35",
+      "verse": "Then the LORD opened the eyes of Balaam, and he saw the angel of the LORD standing in the way.", "verseRef": "Numbers 22:31 (KJV)",
+      "skill": "Robotics, sensors & coding", "badge": "Robot Rider",
+      "story": "Balaam rides his donkey on a journey God has warned him about. The angel of the LORD stands in the road with a sword. Balaam can't see the angel, but the donkey can! She turns into a field, presses against a wall, then lies down. Balaam strikes her three times. Then God lets the donkey speak, and opens Balaam's eyes. He sees the angel and bows down, humbled.",
+      "angelLine": "The donkey saw what the rider missed. Efe in Warri built a little delivery robot to carry food from Mama's buka. Teach it to see what's blocking the road and take the safe path.",
+      "brief": "Robots use sensors to \"see\" the road. Software developers and robotics engineers write the code that tells them where to go. The 🚧 squares are potholes and roadworks. The ✦ is the angel standing in the way.",
+      "careers": ["Robotics / embedded engineer", "Software developer"],
+      "mission": { "type": "robot", "prompt": "The angel (✦) blocks the straight road. Program the robot to reach the customer's gate (⚑) without bumping into anything.", "w": 5, "h": 3, "start": { "x": 0, "y": 1, "d": "E" }, "goal": { "x": 4, "y": 1 }, "walls": [], "angels": [[2, 1]], "wallIcon": "🚧", "maxSteps": 10, "hint": "Try: Forward, Turn left, Forward, Turn right, Forward, Forward..." },
+      "challenges": [
+        { "type": "robot", "prompt": "Potholes everywhere! Find a path to the gate.", "w": 5, "h": 4, "start": { "x": 0, "y": 3, "d": "N" }, "goal": { "x": 4, "y": 0 }, "walls": [[1, 3], [1, 2], [3, 0], [3, 1]], "wallIcon": "🚧", "maxSteps": 14 },
+        { "type": "chart", "prompt": "The robot's distance sensor gives a reading every second (cm to the nearest object). One reading is an anomaly.", "bars": [{ "label": "1s", "value": 300 }, { "label": "2s", "value": 296 }, { "label": "3s", "value": 302 }, { "label": "4s", "value": 40 }, { "label": "5s", "value": 299 }], "question": "At which second did something block the robot's way?", "options": ["1s", "2s", "4s", "5s"], "a": 2, "why": "40 cm is far below the normal pattern. That is an anomaly." },
+        { "type": "robot", "prompt": "Final delivery: a winding road with two warnings. Reach the gate in 16 steps or fewer.", "w": 6, "h": 4, "start": { "x": 0, "y": 0, "d": "E" }, "goal": { "x": 5, "y": 3 }, "walls": [[2, 1], [4, 3], [1, 3]], "angels": [[2, 0], [4, 2]], "wallIcon": "🚧", "maxSteps": 16 }
+      ],
+      "quiz": [
+        { "q": "Who saw the angel first?", "options": ["Balaam", "The donkey", "The king", "The servants"], "a": 1, "why": "The donkey saw the angel three times before Balaam did." },
+        { "q": "What is a sensor?", "options": ["A device that detects light, distance or heat", "A battery", "A robot's name", "A SIM card"], "a": 0, "why": "Sensors measure the world so machines can react." },
+        { "q": "What is an anomaly in data?", "options": ["The average", "A value that breaks the pattern", "The first value", "A label"], "a": 1, "why": "Anomalies can warn of danger, fraud or faults." },
+        { "q": "How many times did Balaam strike the donkey?", "options": ["Once", "Twice", "Three times", "Seven times"], "a": 2, "why": "Numbers 22:28." },
+        { "q": "What is a program?", "options": ["A list of instructions a computer follows in order", "A TV show only", "A phone case", "A password"], "a": 0, "why": "Software developers write programs, step by step." }
+      ],
+      "benefits": { "faith": "Be humble: God can speak through unlikely voices. Listen to warnings.", "personal": "Notice warning signs others might miss.", "professional": "Coding and robotics skills power Nigerian start-ups, factories and logistics." },
+      "deeper": "Python idea: anomalies = [t for t, v in readings if abs(v - mean) > 3 * stdev] flags unusual readings."
+    },
+    {
+      "id": "gideon-fleece", "realm": "judges", "canon": "protestant", "launch": true,
+      "title": "The Fleece Experiment", "ref": "Judges 6:11-40",
+      "verse": "The LORD is with thee, thou mighty man of valour.", "verseRef": "Judges 6:12 (KJV)",
+      "skill": "Scientific method & quality assurance", "badge": "Fair Tester",
+      "story": "Gideon is hiding, threshing wheat in a winepress so that enemy raiders won't see him. The angel of the LORD appears and calls him a \"mighty man of valour\". Gideon feels anything but brave! Later he asks God for a sign with a wool fleece: first wet fleece and dry ground, then dry fleece and wet ground. God patiently answers both, and Gideon's fear turns to courage.",
+      "angelLine": "God met Gideon in his fear. Gideon set up a test with two parts to compare. Emeka in Benue wants to know whether a new fertiliser really helps his maize. Let's design a fair test.",
+      "brief": "A fair test changes ONE thing (the independent variable), measures the result (the dependent variable), and keeps everything else the same (controlled variables). Researchers use fair tests on farms, and QA testers use them to check apps. Quality Assurance is a 3MTT track.",
+      "careers": ["Agricultural researcher", "QA tester", "Data scientist"],
+      "mission": { "type": "sort", "prompt": "Emeka's experiment: \"Does the new fertiliser give more maize?\" Sort each part.", "bins": ["Change it (independent)", "Measure it (dependent)", "Keep it the same (controlled)"], "items": [
+        { "t": "Fertiliser: new or none", "bin": "Change it (independent)" }, { "t": "Kilograms of maize harvested", "bin": "Measure it (dependent)" },
+        { "t": "Size of each plot", "bin": "Keep it the same (controlled)" }, { "t": "Same seed variety", "bin": "Keep it the same (controlled)" },
+        { "t": "Same planting date", "bin": "Keep it the same (controlled)" } ], "hint": "Only ONE thing changes on purpose." },
+      "challenges": [
+        { "type": "choice", "prompt": "Which plot is the CONTROL?", "options": ["A plot with double fertiliser", "A plot with no fertiliser, otherwise treated the same", "A plot planted a month later", "A plot of cassava"], "a": 1, "why": "The control is the same in every way except the thing you are testing." },
+        { "type": "order", "prompt": "Put the scientific method in order.", "items": ["Ask a question", "Make a prediction (hypothesis)", "Plan a fair test", "Do the test and record data", "Draw a conclusion and share it"] },
+        { "type": "chart", "prompt": "Emeka's harvest (kg) from four plots with the new fertiliser and four without.", "bars": [{ "label": "With 1", "value": 52 }, { "label": "With 2", "value": 49 }, { "label": "Without 1", "value": 38 }, { "label": "Without 2", "value": 41 }], "question": "What should Emeka conclude?", "options": ["Fertiliser made no difference", "Plots with fertiliser gave more maize, so it seems to help", "Without fertiliser is better", "He can't learn anything from data"], "a": 1, "why": "With: about 50 kg. Without: about 40 kg. Repeating with more plots would make the result even more reliable." }
+      ],
+      "quiz": [
+        { "q": "Where was Gideon working when the angel came?", "options": ["In a palace", "In a winepress", "On a boat", "In the market"], "a": 1, "why": "Judges 6:11." },
+        { "q": "What did the angel call Gideon?", "options": ["Little one", "Mighty man of valour", "Shepherd boy", "Prophet"], "a": 1, "why": "God saw courage in Gideon before Gideon saw it in himself." },
+        { "q": "In a fair test, how many things do you change on purpose?", "options": ["One", "Two", "All", "None"], "a": 0, "why": "Then you know what caused the difference." },
+        { "q": "What does a QA tester do?", "options": ["Tests apps to find problems before users do", "Sells phones", "Repairs roads", "Prints money"], "a": 0, "why": "Quality Assurance keeps banking and other apps working properly." },
+        { "q": "On the second night, what did Gideon ask for?", "options": ["Fleece wet, ground dry", "Fleece dry, ground wet", "Both wet", "Fire"], "a": 1, "why": "Judges 6:39-40." }
+      ],
+      "benefits": { "faith": "God sees courage in you before you see it in yourself.", "personal": "Test claims before you believe them, including \"miracle\" products and rumours.", "professional": "Research and QA testing skills are needed on farms, in labs and at software companies." },
+      "deeper": "With more plots, researchers use statistics (e.g. a t-test) to check whether the difference is bigger than chance."
+    },
+    {
+      "id": "david-census", "realm": "judges", "canon": "protestant", "launch": true,
+      "title": "Counting the People", "ref": "2 Samuel 24; 1 Chronicles 21",
+      "verse": "...and saw the angel of the LORD stand between the earth and the heaven...", "verseRef": "1 Chronicles 21:16 (KJV)",
+      "skill": "Data analysis & public health", "badge": "Data Detective",
+      "story": "King David orders his commander Joab to count all the fighting men of Israel and Judah. Joab warns him, but David insists. David is trusting in numbers instead of God. Afterwards David's heart is troubled and he repents. A plague falls on the land, and David sees the angel of the LORD near Araunah's threshing floor. David prays for the people and builds an altar there, and the plague stops.",
+      "angelLine": "Numbers are a gift for caring for people. They are not something to boast about. Bisi works at a health office in Ibadan, where data helps stop outbreaks. Learn to read data wisely.",
+      "brief": "Data analysts and epidemiologists (like those at NCDC, the Nigeria Centre for Disease Control) count cases, draw charts and warn communities early. Data Analysis is a 3MTT track. Always ask: who was counted, how, and why?",
+      "careers": ["Data analyst", "Epidemiologist", "Statistician"],
+      "mission": { "type": "chart", "prompt": "Joab's report in 2 Samuel 24:9 (fighting men).", "bars": [{ "label": "Israel", "value": 800000 }, { "label": "Judah", "value": 500000 }], "question": "What is the total counted?", "options": ["1,000,000", "1,300,000", "300,000", "1,800,000"], "a": 1, "why": "800,000 + 500,000 = 1,300,000" },
+      "challenges": [
+        { "type": "chart", "prompt": "1 Chronicles 21:5 gives Israel 1,100,000 and Judah 470,000.", "bars": [{ "label": "Israel (2 Sam)", "value": 800000 }, { "label": "Israel (1 Chr)", "value": 1100000 }, { "label": "Judah (2 Sam)", "value": 500000 }, { "label": "Judah (1 Chr)", "value": 470000 }], "question": "When two records differ, what should a data detective ask first?", "options": ["Which is bigger?", "Who and what exactly was counted in each?", "Throw both away", "Pick one at random"], "a": 1, "why": "Scholars suggest the books may count different groups. Always check definitions." },
+        { "type": "numeric", "prompt": "Bisi models a cholera outbreak: day 1 has 1 new case, and new cases double every day. How many NEW cases on day 5?", "answer": 16, "unit": "cases", "hint": "1, 2, 4, 8..." },
+        { "type": "choice", "prompt": "To learn how many families in Oyo State have clean drinking water, which survey is FAIREST?", "options": ["Ask 500 families on one street in Ibadan", "Ask 500 families chosen at random across the state", "Ask your WhatsApp contacts", "Ask only people who reply first"], "a": 1, "why": "A random sample from the whole state avoids bias." }
+      ],
+      "quiz": [
+        { "q": "Who warned David not to count the people?", "options": ["Joab", "Saul", "Goliath", "Nathan"], "a": 0, "why": "2 Samuel 24:3." },
+        { "q": "What did David do after seeing the angel?", "options": ["Ran away", "Prayed and built an altar", "Counted again", "Blamed Joab"], "a": 1, "why": "He repented and prayed for the people." },
+        { "q": "What does NCDC stand for?", "options": ["Nigeria Centre for Disease Control", "National Cars and Drivers Council", "New City Data Centre", "Nigerian Cooking & Dining Club"], "a": 0, "why": "NCDC uses data to track and stop disease outbreaks." },
+        { "q": "What is a random sample?", "options": ["Choosing people fairly so everyone has a chance", "Asking your friends", "Picking the loudest people", "Guessing"], "a": 0, "why": "Random samples reduce bias." },
+        { "q": "If cases double each day from 1, how many on day 4?", "options": ["4", "6", "8", "16"], "a": 2, "why": "1, 2, 4, 8: exponential growth." }
+      ],
+      "benefits": { "faith": "Trust God, not numbers alone. When you go wrong, turn back to God: He hears.", "personal": "Read news, statistics and WhatsApp claims wisely.", "professional": "Data analysts are needed in banks, fintechs, NBS, NCDC and NGOs across Nigeria." },
+      "deeper": "Python idea: cases = [2**(d-1) for d in range(1, 8)] models doubling. Real outbreaks slow down with vaccination, clean water and isolation."
+    },
+    {
+      "id": "seraphim", "realm": "prophets", "canon": "protestant", "launch": true,
+      "title": "Whom Shall I Send?", "ref": "Isaiah 6:1-8",
+      "verse": "Whom shall I send, and who will go for us? Then said I, Here am I; send me.", "verseRef": "Isaiah 6:8 (KJV)",
+      "skill": "AI literacy & responsible AI", "badge": "AI Steward",
+      "story": "In the year King Uzziah dies, Isaiah sees the Lord on a high throne. Seraphim stand above, each with six wings, calling, \"Holy, holy, holy, is the LORD of hosts.\" Isaiah feels unworthy. One seraph flies to him with a live coal from the altar and touches his lips: his sin is taken away. Then God asks, \"Whom shall I send?\" Isaiah answers, \"Here am I; send me.\"",
+      "angelLine": "Words matter. Isaiah's lips were made clean for God's message. Femi in Abuja uses AI to study for WAEC. Teach him to give clear instructions, check answers, and use AI honestly.",
+      "brief": "AI tools can explain, summarise and answer questions, but they make mistakes and can be biased. For example, an AI trained mostly on foreign voices may misunderstand Nigerian accents and names. AI/Machine Learning is a 3MTT track.",
+      "careers": ["AI / ML engineer", "Product manager"],
+      "mission": { "type": "sort", "prompt": "Which prompts are CLEAR (task, audience, length) and which are VAGUE?", "bins": ["Clear", "Vague"], "items": [
+        { "t": "\"Tell me stuff.\"", "bin": "Vague" }, { "t": "\"Explain photosynthesis in 5 sentences for a JSS 2 student.\"", "bin": "Clear" },
+        { "t": "\"Do my assignment.\"", "bin": "Vague" }, { "t": "\"Give me 5 WAEC-style questions on Isaiah 6 with answers.\"", "bin": "Clear" },
+        { "t": "\"Make it good.\"", "bin": "Vague" }, { "t": "\"List 3 tips to keep my bank app safe, as bullet points.\"", "bin": "Clear" } ], "hint": "A clear prompt says what, for whom, and how long." },
+      "challenges": [
+        { "type": "choice", "prompt": "An AI says: \"Isaiah saw the seraphim in Genesis 1.\" What should Femi do?", "options": ["Believe it: computers are always right", "Check his Bible: the AI is wrong (it's Isaiah 6)", "Copy it into his notes", "Share it on WhatsApp"], "a": 1, "why": "AI can \"hallucinate\" wrong facts. Always check them." },
+        { "type": "choice", "prompt": "A voice app trained mostly on American and British speakers keeps misunderstanding Nigerian accents. What is this called?", "options": ["Speed", "Bias in the training data", "Good design", "A virus"], "a": 1, "why": "AI learns from its data. Nigerian engineers can fix this by training on Nigerian voices." },
+        { "type": "order", "prompt": "Put the steps for using AI honestly on homework in order.", "items": ["Check your school's rules on AI", "Write a clear, specific prompt", "Read the answer carefully", "Check facts in your textbook or Bible", "Write in your own words and say how you used AI"] }
+      ],
+      "quiz": [
+        { "q": "How many wings did each seraph have?", "options": ["Two", "Four", "Six", "Twelve"], "a": 2, "why": "Isaiah 6:2." },
+        { "q": "What touched Isaiah's lips?", "options": ["A feather", "A live coal from the altar", "Oil", "Water"], "a": 1, "why": "Isaiah 6:6-7." },
+        { "q": "What is an AI \"hallucination\"?", "options": ["A dream", "When AI states something false as true", "A screen crack", "A virus"], "a": 1, "why": "Always verify AI answers." },
+        { "q": "How can Nigerians make AI work better for Nigerians?", "options": ["Stop using it", "Build and train AI with Nigerian languages, voices and data", "Shout at it", "Use only foreign apps"], "a": 1, "why": "Nigerian AI engineers are needed for Nigerian problems." },
+        { "q": "How did Isaiah answer God's call?", "options": ["\"Not me\"", "\"Here am I; send me\"", "\"Maybe later\"", "He said nothing"], "a": 1, "why": "Isaiah 6:8." }
+      ],
+      "benefits": { "faith": "God calls willing hearts: \"Here am I; send me.\"", "personal": "Use AI safely and honestly, and spot when it's wrong.", "professional": "Nigeria needs AI builders who understand Nigerian languages, accents and needs." },
+      "deeper": "Language models predict likely next words from patterns in data. That's why they can sound confident and still be wrong."
+    },
+    {
+      "id": "ezekiel-temple", "realm": "prophets", "canon": "protestant", "launch": true,
+      "title": "The Measuring Reed", "ref": "Ezekiel 40:1-5, 47",
+      "verse": "...a man, whose appearance was like the appearance of brass, with a line of flax in his hand, and a measuring reed...", "verseRef": "Ezekiel 40:3 (KJV)",
+      "skill": "Civil engineering, CAD & quantity surveying", "badge": "Builder of Walls",
+      "story": "God's people are in exile, and the temple lies in ruins. In a vision, God brings Ezekiel to a very high mountain. There stands a man who shines like bronze, with a measuring line and a measuring reed. \"Behold with thine eyes,\" he says, \"and set thine heart upon all that I shall shew thee.\" He measures every wall, gate and court with care. God's plans are full of hope and order.",
+      "angelLine": "Measure carefully, for God's plans are precise and good. Grace's church in Abuja is building a new hall. Help her plan it and count the blocks, so no money is wasted.",
+      "brief": "Civil engineers draw plans in CAD (Computer-Aided Design), and quantity surveyors work out how many materials are needed. A standard 9-inch sandcrete block wall uses about 10 blocks per square metre.",
+      "careers": ["Civil engineer", "Quantity surveyor", "Architect"],
+      "mission": { "type": "numeric", "prompt": "One measuring reed = 6 cubits (Ezekiel 40:5). A gateway is 5 reeds long. How many cubits is that?", "answer": 30, "unit": "cubits", "hint": "5 × 6" },
+      "challenges": [
+        { "type": "numeric", "prompt": "Grace's hall floor is 20 m long and 12 m wide. What is its area?", "answer": 240, "unit": "m²", "hint": "length × width" },
+        { "type": "numeric", "prompt": "One wall is 10 m long and 3 m high. At 10 blocks per m², how many blocks are needed?", "answer": 300, "unit": "blocks", "hint": "Area = 10 × 3 = 30 m². Then × 10." },
+        { "type": "numeric", "prompt": "If each block costs ₦600, how much do 300 blocks cost? (Type the number only.)", "answer": 180000, "unit": "naira", "hint": "300 × 600" }
+      ],
+      "quiz": [
+        { "q": "What did the man in Ezekiel's vision hold?", "options": ["A sword", "A measuring line and reed", "A trumpet", "A torch"], "a": 1, "why": "Ezekiel 40:3." },
+        { "q": "How many cubits long was the reed?", "options": ["3", "6", "10", "12"], "a": 1, "why": "Ezekiel 40:5." },
+        { "q": "What does a quantity surveyor do?", "options": ["Works out materials and costs for building", "Sings in the choir", "Drives a danfo", "Fixes phones"], "a": 0, "why": "Quantity surveyors stop waste and keep projects on budget." },
+        { "q": "What is the area of a 5 m × 4 m room?", "options": ["9 m²", "20 m²", "18 m²", "40 m²"], "a": 1, "why": "5 × 4 = 20." },
+        { "q": "What does CAD stand for?", "options": ["Computer-Aided Design", "Cement And Decking", "Church Account Department", "Central Area Data"], "a": 0, "why": "Engineers and architects draw plans on computers." }
+      ],
+      "benefits": { "faith": "Even in exile, God shows plans full of hope and order.", "personal": "Plan building projects with confidence and avoid waste and cheating.", "professional": "Nigeria is building fast. Civil engineers, quantity surveyors and architects are always needed." },
+      "deeper": "A block's face is 450 mm × 225 mm, about 0.101 m², so roughly 10 blocks per m² before allowing for mortar and waste (usually add 5-10%)."
+    },
+    {
+      "id": "gabriel-daniel", "realm": "prophets", "canon": "protestant", "launch": true,
+      "title": "Skill and Understanding", "ref": "Daniel 8:15-27; 9:20-27",
+      "verse": "O Daniel, I am now come forth to give thee skill and understanding.", "verseRef": "Daniel 9:22 (KJV)",
+      "skill": "Data science & machine learning", "badge": "Pattern Seeker",
+      "story": "Daniel sees a strange vision: a ram with two horns pushing west, north and south, and a goat with one great horn racing so fast its feet don't touch the ground. Daniel longs to understand. A voice calls, \"Gabriel, make this man to understand the vision.\" Later, while Daniel is praying, Gabriel comes again: \"O Daniel, I am now come forth to give thee skill and understanding.\"",
+      "angelLine": "Wisdom comes from God, and He gives understanding to those who seek it. Ifeoma in Owerri is learning data science. Let's train a computer to spot patterns, step by step.",
+      "brief": "Machine learning means teaching a computer to spot patterns from examples. First give it labelled training data, then let it classify new things it hasn't seen. Data Science is a 3MTT track.",
+      "careers": ["Data scientist", "AI / ML engineer"],
+      "mission": { "type": "sort", "prompt": "Build the training data! Label each feature from Daniel 8:3-8 as RAM or GOAT.", "bins": ["Ram", "Goat"], "items": [
+        { "t": "Two horns, one higher than the other", "bin": "Ram" }, { "t": "One notable horn between the eyes", "bin": "Goat" },
+        { "t": "Pushes westward, northward and southward", "bin": "Ram" }, { "t": "Comes from the west without touching the ground", "bin": "Goat" },
+        { "t": "Its great horn breaks and four grow up", "bin": "Goat" } ], "hint": "Read Daniel 8:3-8." },
+      "challenges": [
+        { "type": "choice", "prompt": "Your model sees a NEW animal: \"one horn, very fast\". What should it predict?", "options": ["Ram", "Goat", "Lion", "Nothing"], "a": 1, "why": "Both features match the goat pattern." },
+        { "type": "numeric", "prompt": "Gabriel speaks of \"seventy weeks\" (Daniel 9:24). Many read each week as 7 years. 70 × 7 = ? years.", "answer": 490, "unit": "years", "hint": "70 × 7" },
+        { "type": "numeric", "prompt": "Find the pattern: 3, 7, 11, 15, ?", "answer": 19, "hint": "What do you add each time?" }
+      ],
+      "quiz": [
+        { "q": "Which angel helped Daniel understand?", "options": ["Michael", "Gabriel", "Raphael", "None"], "a": 1, "why": "Daniel 8:16; 9:21." },
+        { "q": "What is training data?", "options": ["Gym records", "Labelled examples a computer learns from", "A bus timetable", "A password list"], "a": 1, "why": "Models learn patterns from examples." },
+        { "q": "What was Daniel doing when Gabriel came the second time?", "options": ["Sleeping", "Praying", "Eating", "Fighting"], "a": 1, "why": "Daniel 9:20-21." },
+        { "q": "A bank uses ML to flag strange card payments. This helps stop...", "options": ["Rain", "Fraud", "Traffic", "Exams"], "a": 1, "why": "Fraud detection is a major use of ML in Nigerian fintech." },
+        { "q": "Why can ML models make mistakes?", "options": ["They are lazy", "Their training data may be limited or biased", "They are always perfect", "They are made of glass"], "a": 1, "why": "Good engineers test models with new data." }
+      ],
+      "benefits": { "faith": "God gives wisdom and understanding to those who seek Him.", "personal": "Spotting patterns helps you learn faster in maths, music and life.", "professional": "Data scientists are in demand at Nigerian banks, fintechs and telecoms companies, and in remote jobs worldwide." },
+      "deeper": "Python idea (scikit-learn): DecisionTreeClassifier().fit(features, labels).predict([[1, 1]])"
+    },
+    {
+      "id": "shepherds", "realm": "gospels", "canon": "protestant", "launch": true,
+      "title": "Good Tidings, Sent", "ref": "Luke 2:8-20",
+      "verse": "Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people.", "verseRef": "Luke 2:10 (KJV)",
+      "skill": "Software development & encoding", "badge": "Signal Sender",
+      "story": "On a quiet night near Bethlehem, shepherds are watching their sheep. Suddenly an angel of the Lord appears and the glory of the Lord shines around them. They are terrified! \"Fear not,\" says the angel, \"for, behold, I bring you good tidings of great joy.\" A Saviour is born: Christ the Lord. A whole heavenly host praises God. The shepherds hurry to find baby Jesus, then spread the news everywhere.",
+      "angelLine": "This good news is for ALL people, even humble shepherds! Seun in Jos is learning to code. Every text he sends travels as 1s and 0s. Help him send a message of JOY.",
+      "brief": "Computers store every letter as bits (0s and 1s). In ASCII, each letter has a number, and that number is written in binary. Software developers work with code like this every day. Software Development is a 3MTT track.",
+      "careers": ["Software developer", "Telecoms engineer"],
+      "mission": { "type": "binary", "mode": "number", "prompt": "Each switch is worth 128, 64, 32, 16, 8, 4, 2 or 1. Turn switches on (1) to make the number 5.", "target": 5, "hint": "4 + 1" },
+      "challenges": [
+        { "type": "binary", "mode": "letter", "prompt": "In ASCII, \"J\" = 74. Make 74 in binary.", "target": 74, "letter": "J" },
+        { "type": "binary", "mode": "letter", "prompt": "\"O\" = 79. Encode the next letter.", "target": 79, "letter": "O" },
+        { "type": "binary", "mode": "letter", "prompt": "\"Y\" = 89. Complete the message JOY!", "target": 89, "letter": "Y" }
+      ],
+      "quiz": [
+        { "q": "Who first heard the news of Jesus' birth from the angel?", "options": ["Kings", "Shepherds", "Priests", "Soldiers"], "a": 1, "why": "Luke 2:8-10." },
+        { "q": "What is a bit?", "options": ["A 0 or 1", "A biscuit", "A cable", "A word"], "a": 0, "why": "Bits are the building blocks of digital data." },
+        { "q": "What is 1010 in binary as a normal number?", "options": ["10", "1,010", "4", "12"], "a": 0, "why": "8 + 2 = 10" },
+        { "q": "Who was the good news for?", "options": ["Only Israel", "Only shepherds", "All people", "Only angels"], "a": 2, "why": "Luke 2:10." },
+        { "q": "Which of these can you start learning for free online?", "options": ["Coding", "Nothing", "Only football", "Only cooking"], "a": 0, "why": "Many Nigerian developers started with free courses and practice." }
+      ],
+      "benefits": { "faith": "The good news of Jesus is for everyone, including you.", "personal": "Communicate clearly. Your messages matter.", "professional": "Software developers are needed by Nigerian fintechs and start-ups, and many work remotely for global companies." },
+      "deeper": "Python idea: ' '.join(format(ord(c), '08b') for c in 'JOY') gives '01001010 01001111 01011001'."
+    },
+    {
+      "id": "peter-prison", "realm": "acts", "canon": "protestant", "launch": true,
+      "title": "The Gate That Opened", "ref": "Acts 12:1-17",
+      "verse": "And his chains fell off from his hands.", "verseRef": "Acts 12:7 (KJV)",
+      "skill": "Cybersecurity & fintech safety", "badge": "Cyber Guardian",
+      "story": "King Herod throws Peter into prison, chained between two soldiers. The church prays hard for him. That night an angel appears and light fills the cell. \"Arise up quickly,\" says the angel, and the chains fall from Peter's hands! The iron gate opens by itself. Peter knocks at the house where people are praying. A girl called Rhoda recognises his voice, and she is so happy that she runs to tell everyone and forgets to open the door!",
+      "angelLine": "Prayer changes things. God opened that gate, but we must guard our own. Rhoda knew Peter by his voice, and banks check who you are too. Help Tari in Yenagoa protect her family's money from scammers.",
+      "brief": "Cybersecurity protects accounts and money. Your PIN, OTP (one-time password) and BVN details are keys, so never share them. Banks will NEVER ask for your PIN or OTP by phone, SMS or WhatsApp. Cybersecurity is a 3MTT track.",
+      "careers": ["Cybersecurity analyst", "Software developer"],
+      "mission": { "type": "cipher", "prompt": "The church sent a secret encouragement using a shift cipher. Turn the dial until it makes sense.", "text": "SUDB", "answer": "PRAY", "hint": "Shift each letter back by 3." },
+      "challenges": [
+        { "type": "sort", "prompt": "Safe or NOT safe to share?", "bins": ["Never share", "OK to share"], "items": [
+          { "t": "Your ATM PIN", "bin": "Never share" }, { "t": "An OTP sent to your phone", "bin": "Never share" },
+          { "t": "Your online banking password", "bin": "Never share" }, { "t": "Your favourite Bible verse", "bin": "OK to share" },
+          { "t": "Your BVN, with a stranger who called you", "bin": "Never share" }, { "t": "Your school's name, with your teacher", "bin": "OK to share" } ] },
+        { "type": "choice", "prompt": "Tari's aunty gets an SMS: \"Your BVN has been blocked! Call this number and give your OTP to unblock.\" What should she do?", "options": ["Call quickly and give the OTP", "Ignore it, never share the OTP, and contact the bank using the number on her card", "Forward it to everyone", "Reply with her PIN"], "a": 1, "why": "This is a phishing scam. Banks never ask for OTPs or PINs." },
+        { "type": "cipher", "prompt": "Decode the angel's command (shift cipher).", "text": "DULVH", "answer": "ARISE" }
+      ],
+      "quiz": [
+        { "q": "What happened to Peter's chains?", "options": ["They broke", "They fell off his hands", "They turned to gold", "Soldiers unlocked them"], "a": 1, "why": "Acts 12:7." },
+        { "q": "How did Rhoda know it was Peter?", "options": ["She saw him", "She recognised his voice", "He showed ID", "He sent a text"], "a": 1, "why": "Acts 12:14: an identity check!" },
+        { "q": "What is an OTP?", "options": ["A one-time password sent to confirm it's really you", "A type of phone", "A bank branch", "A football club"], "a": 0, "why": "Anyone who has your OTP can act as you, so never share it." },
+        { "q": "What is phishing?", "options": ["Tricking people into giving away passwords or codes", "A sport", "Catching fish", "Fixing phones"], "a": 0, "why": "Scammers pretend to be banks, telecoms companies or friends." },
+        { "q": "What was the church doing while Peter was in prison?", "options": ["Sleeping", "Praying", "Leaving town", "Arguing"], "a": 1, "why": "Acts 12:5." }
+      ],
+      "benefits": { "faith": "Prayer changes things. God can open doors no one else can.", "personal": "Protect your family's money and accounts from scams.", "professional": "Nigerian banks and fintechs need cybersecurity experts to fight fraud." },
+      "deeper": "Real encryption (AES) is far stronger than shift ciphers, which have only 25 keys. A computer can try all of them instantly."
+    },
+    {
+      "id": "new-jerusalem", "realm": "acts", "canon": "protestant", "launch": true,
+      "title": "The City Foursquare", "ref": "Revelation 21:9-21",
+      "verse": "And the city lieth foursquare... The length and the breadth and the height of it are equal.", "verseRef": "Revelation 21:16 (KJV)",
+      "skill": "3D modelling, animation & game development", "badge": "Golden Reed",
+      "story": "The apostle John is shown the end of the story. An angel carries him to a great high mountain and shows him the holy city, New Jerusalem, coming down from God. It shines like a precious jewel, clear as crystal. The angel measures the city with a golden reed. The city is foursquare: its length, width and height are equal. God will wipe away every tear.",
+      "angelLine": "God's future is glorious and secure. Daniel in Kaduna dreams of making animated films and games. Take this golden reed and let's build in 3D!",
+      "brief": "A shape with equal length, width and height is a cube, and its volume is side × side × side. Animators and game developers build 3D worlds with geometry. Animation and Game Development are 3MTT tracks, and Nollywood needs VFX artists too.",
+      "careers": ["Animator / game developer", "Civil engineer"],
+      "mission": { "type": "numeric", "prompt": "A 3D model cube has sides of 3 units. What is its volume?", "answer": 27, "unit": "cubic units", "hint": "3 × 3 × 3" },
+      "challenges": [
+        { "type": "numeric", "prompt": "What is the surface area of that cube? (6 faces × side × side)", "answer": 54, "unit": "square units", "hint": "6 × 9" },
+        { "type": "numeric", "prompt": "The city measured 12,000 furlongs (stadia). One stadion is about 0.185 km. About how many km is that?", "answer": 2220, "tolerance": 1, "unit": "km", "hint": "12,000 × 0.185" },
+        { "type": "numeric", "prompt": "The wall was 144 cubits (Revelation 21:17). 144 = 12 × ?", "answer": 12, "hint": "What times itself makes 144?" }
+      ],
+      "quiz": [
+        { "q": "What did the angel measure the city with?", "options": ["A rope", "A golden reed", "A tape", "His hand"], "a": 1, "why": "Revelation 21:15." },
+        { "q": "What shape has equal length, width and height?", "options": ["Cylinder", "Cube", "Pyramid", "Sphere"], "a": 1, "why": "All edges of a cube are equal." },
+        { "q": "Volume of a cube with side s?", "options": ["s + s + s", "s × s × s", "4 × s", "s ÷ 3"], "a": 1, "why": "s³" },
+        { "q": "How many gates did the city have?", "options": ["4", "7", "12", "40"], "a": 2, "why": "Revelation 21:12." },
+        { "q": "Which free software can you use to start 3D modelling?", "options": ["Blender", "A calculator", "A radio", "A stapler"], "a": 0, "why": "Blender is free and used for animation and VFX." }
+      ],
+      "benefits": { "faith": "God's future is glorious: He will wipe away every tear.", "personal": "Picture shapes in 3D and turn your ideas into creations.", "professional": "Animation, VFX and game development are growing creative-tech careers in Nigeria and worldwide." },
+      "deeper": "Game engines store 3D objects as meshes of triangles and use vector maths for movement, collisions and lighting."
+    },
+    { "id": "lot-rescued", "realm": "garden", "canon": "protestant", "stub": true, "title": "Escape to the Mountains", "ref": "Genesis 19:1-22", "skill": "Logistics & shortest paths" },
+    { "id": "joshua-commander", "realm": "exodus", "canon": "protestant", "stub": true, "title": "The Commander's Plan", "ref": "Joshua 5:13-15", "skill": "Product management" },
+    { "id": "samson-parents", "realm": "judges", "canon": "protestant", "stub": true, "title": "A Child With Purpose", "ref": "Judges 13:2-23", "skill": "Health data & nutrition" },
+    { "id": "elijah-fed", "realm": "judges", "canon": "protestant", "stub": true, "title": "Arise and Eat", "ref": "1 Kings 19:5-8", "skill": "Human biology & wellbeing" },
+    { "id": "chariots-fire", "realm": "judges", "canon": "protestant", "stub": true, "title": "Open His Eyes", "ref": "2 Kings 6:15-17", "skill": "Augmented reality & UI/UX" },
+    { "id": "fiery-furnace", "realm": "prophets", "canon": "protestant", "stub": true, "title": "Seven Times Hotter", "ref": "Daniel 3:19-28", "skill": "Heat & materials" },
+    { "id": "zechariah-line", "realm": "prophets", "canon": "protestant", "stub": true, "title": "A Wall of Fire", "ref": "Zechariah 2:1-5", "skill": "Surveying & GIS" },
+    { "id": "zechariah-mute", "realm": "gospels", "canon": "protestant", "stub": true, "title": "His Name Is John", "ref": "Luke 1:11-20, 63-64", "skill": "UI/UX & accessibility design" },
+    { "id": "joseph-dreams", "realm": "gospels", "canon": "protestant", "stub": true, "title": "Arise, Take the Child", "ref": "Matthew 1:20-24; 2:13-20", "skill": "Decision trees & risk" },
+    { "id": "empty-tomb", "realm": "gospels", "canon": "protestant", "stub": true, "title": "He Is Risen", "ref": "Matthew 28:1-7", "skill": "Simple machines & levers" },
+    { "id": "philip-gaza", "realm": "acts", "canon": "protestant", "stub": true, "title": "The Desert Road", "ref": "Acts 8:26-40", "skill": "GPS & route planning" },
+    { "id": "cornelius", "realm": "acts", "canon": "protestant", "stub": true, "title": "The House by the Sea", "ref": "Acts 10:1-8", "skill": "Internet addressing & fintech" },
+    { "id": "paul-storm", "realm": "acts", "canon": "protestant", "stub": true, "title": "Be of Good Cheer", "ref": "Acts 27:13-44", "skill": "Weather & flood-risk data" },
+    { "id": "four-winds", "realm": "acts", "canon": "protestant", "stub": true, "title": "Holding the Four Winds", "ref": "Revelation 7:1-3", "skill": "Renewable energy" },
+    { "id": "raphael-tobit", "realm": "prophets", "canon": "deuterocanonical", "stub": true, "title": "Raphael the Guide", "ref": "Tobit 5-12", "skill": "Biotech & vision science" }
+  ]
+}

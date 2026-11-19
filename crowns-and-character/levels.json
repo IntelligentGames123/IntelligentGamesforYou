@@ -1,0 +1,713 @@
+{
+  "version": 1,
+  "translation": "KJV",
+  "careerNote": "Leadership roles are general guidance. Requirements differ by school, church, employer and state, so check with the organisation itself. Voting rules come from INEC and the Electoral Act; confirm current details on INEC's official website.",
+  "realms": [
+    { "id": "choose", "name": "How to Choose", "books": "Exodus - 1 Samuel", "color": "#f4b324" },
+    { "id": "jotham", "name": "The Jotham Line", "books": "2 Kings, 2 Chronicles, Matthew 1:9-10", "color": "#b38cff" },
+    { "id": "servant", "name": "Servant Leaders", "books": "Gospels & Acts", "color": "#5fd3a0" }
+  ],
+  "lineage": ["Uzziah (Ozias)", "Jotham (Joatham)", "Ahaz (Achaz)", "Hezekiah (Ezekias)", "Manasseh (Manasses)", "Amon", "Josiah (Josias)"],
+  "careers": {
+    "Class prefect": { "start": "Serve your class well, keep your promises and stand when nominations open.", "where": "Primary and secondary schools across Nigeria" },
+    "Youth fellowship leader": { "start": "Join a church or mosque youth team, serve faithfully and learn from older leaders.", "where": "Churches, mosques, youth fellowships, NYSC CDS groups" },
+    "Team captain": { "start": "Arrive early, train hard and encourage everyone, not only your friends.", "where": "School teams, community clubs, academies" },
+    "Project manager": { "start": "Learn planning tools; certificates such as PMP or PRINCE2 help later.", "where": "Banks, telecoms, oil and gas, NGOs, government agencies" },
+    "Human resources officer": { "start": "Study business, psychology or HR; CIPM certification is respected in Nigeria.", "where": "Every medium or large organisation" },
+    "Cooperative treasurer": { "start": "Keep clear records of every naira and show them to members.", "where": "Market associations, staff cooperatives, ajo and esusu groups" },
+    "Accountant or auditor": { "start": "Study accounting; qualify with ICAN or ANAN.", "where": "Audit firms, banks, companies, government" },
+    "Engineer": { "start": "Strong WAEC maths and physics, then a degree and COREN registration.", "where": "Construction, power, water, manufacturing" },
+    "Community development officer": { "start": "Volunteer on local projects; study social work or community development.", "where": "Local governments, NGOs, development agencies" },
+    "Water project coordinator": { "start": "Study civil engineering or public health; volunteer with WASH projects.", "where": "State water agencies, NGOs, international partners" },
+    "Crisis manager": { "start": "Learn first aid and emergency planning; study management or security.", "where": "Companies, hospitals, NEMA and SEMAs, NGOs" },
+    "Student union leader": { "start": "Serve in departmental associations first, then stand for office.", "where": "Universities, polytechnics, colleges of education" },
+    "Counsellor": { "start": "Study guidance and counselling or psychology.", "where": "Schools, churches, hospitals, NGOs" },
+    "Mentor": { "start": "Help someone younger with what you already know, and keep learning.", "where": "Schools, churches, workplaces, mentoring programmes" },
+    "Editor or journalist": { "start": "Write for your school magazine; study mass communication.", "where": "Newspapers, broadcasters, online media" },
+    "Compliance officer": { "start": "Study law, accounting or business; learn the rules of your industry.", "where": "Banks, fintechs, telecoms, regulators" },
+    "Electoral officer": { "start": "INEC recruits NYSC members and other adults as ad hoc staff at elections.", "where": "INEC and election observer groups" },
+    "Civic educator": { "start": "Volunteer with civic and youth groups that teach people their rights and duties.", "where": "NGOs, schools, the National Orientation Agency" },
+    "Pastor or church elder": { "start": "Grow in faith, serve faithfully and train through your church.", "where": "Churches and ministries" },
+    "Entrepreneur": { "start": "Solve a real problem for real people; start small and keep honest records.", "where": "Anywhere: markets, tech hubs, farms, workshops" }
+  },
+  "levels": [
+    {
+      "id": "jethro-advice",
+      "realm": "choose",
+      "title": "Jethro's Advice",
+      "ref": "Exodus 18:13-26",
+      "verse": "Moreover thou shalt provide out of all the people able men, such as fear God, men of truth, hating covetousness; and place such over them.",
+      "verseRef": "Exodus 18:21 (KJV)",
+      "skill": "Delegation & what to look for in a leader",
+      "badge": "Wise Chooser",
+      "story": "Moses sat judging the people from morning until evening, all by himself. His father-in-law Jethro watched and said: \"The thing that thou doest is not good. Thou wilt surely wear away.\" Jethro told Moses to teach the people God's ways and to choose helpers: \"able men, such as fear God, men of truth, hating covetousness\". They would lead groups of thousands, hundreds, fifties and tens, and bring only the hardest cases to Moses. Moses listened, and the people went home in peace.",
+      "guideLine": "Welcome, young leader! I am Jotham. I once told the trees a story about choosing a king. Kemi in Ibadan was just made youth fellowship president, and she is trying to do everything alone, like Moses. Let's help her choose good helpers.",
+      "brief": "Jethro gave Moses a four-part checklist: able (can do the work), fears God, tells the truth, and hates covetousness (will not take bribes or grab what isn't theirs). Great leaders share the work with people who pass this checklist. That skill is called delegation.",
+      "careers": ["Youth fellowship leader", "Project manager", "Human resources officer"],
+      "mission": {
+        "type": "sort",
+        "prompt": "Kemi is choosing helpers. Is each thing a sign to LOOK FOR, or a sign to WATCH OUT for?",
+        "bins": ["Look for", "Watch out"],
+        "items": [
+          { "t": "Finishes the tasks they agree to do", "bin": "Look for" },
+          { "t": "Tells the truth even when it costs them", "bin": "Look for" },
+          { "t": "Gives everyone gala and drinks so they will vote for him", "bin": "Watch out" },
+          { "t": "Prays and treats the younger members with respect", "bin": "Look for" },
+          { "t": "Has the loudest voice but never turns up to help", "bin": "Watch out" },
+          { "t": "Keeps some of the offering money \"for transport\" without telling anyone", "bin": "Watch out" }
+        ],
+        "hint": "Check each one against Exodus 18:21: able, fears God, truthful, hates covetousness."
+      },
+      "challenges": [
+        {
+          "type": "numeric",
+          "prompt": "Kemi's fellowship has 120 members. If she follows Jethro's plan and makes one leader for every 10 people, how many leaders of tens does she need?",
+          "answer": 12,
+          "unit": "leaders",
+          "hint": "120 ÷ 10"
+        },
+        {
+          "type": "order",
+          "prompt": "Put Jethro's plan in order.",
+          "items": [
+            "Notice the leader is wearing out",
+            "Teach everyone the rules and the right way to live",
+            "Choose able, God-fearing, truthful, honest helpers",
+            "Give each helper a group to lead",
+            "Bring only the hardest cases to the top leader"
+          ],
+          "hint": "Jethro saw the problem first, then taught, then chose, then shared the work."
+        },
+        {
+          "type": "choice",
+          "prompt": "Bisi is very popular, but last term she kept part of the class party money. Kemi's friends say \"Choose her, everyone likes her.\" What should Kemi do?",
+          "options": [
+            "Choose Bisi, because being liked is the most important thing",
+            "Give Bisi the money role so she can prove herself",
+            "Choose someone who is honest with money, and pray for Bisi to change",
+            "Do all the work herself so no one gets hurt"
+          ],
+          "a": 2,
+          "why": "Jethro said leaders must hate covetousness. Popular is not the same as trustworthy."
+        }
+      ],
+      "quiz": [
+        { "q": "Who gave Moses advice about choosing leaders?", "options": ["Aaron", "Jethro", "Joshua", "Pharaoh"], "a": 1, "why": "Jethro, Moses' father-in-law (Exodus 18)." },
+        { "q": "What did Jethro say would happen if Moses kept doing everything alone?", "options": ["He would get rich", "He would wear away", "He would become king", "Nothing"], "a": 1, "why": "\"Thou wilt surely wear away\" (Exodus 18:18)." },
+        { "q": "What does \"hating covetousness\" mean for a leader?", "options": ["Hating other people", "Not grabbing money or gifts that aren't theirs", "Never buying anything", "Wearing plain clothes"], "a": 1, "why": "Covetousness means greed. A good leader refuses bribes." },
+        { "q": "Sharing work with trusted helpers is called…", "options": ["Delegation", "Decoration", "Dictation", "Debate"], "a": 0, "why": "Delegation lets more people be served, and grows new leaders." },
+        { "q": "Which person passes Jethro's checklist?", "options": ["Rich but dishonest", "Loud but lazy", "Able, honest and God-fearing", "Popular but greedy"], "a": 2, "why": "Exodus 18:21 lists able, fear God, truth, hating covetousness." }
+      ],
+      "benefits": {
+        "faith": "God cares about how leaders are chosen, and He uses wise advice from family and elders.",
+        "personal": "You have a simple checklist to use whenever you choose a friend, partner or leader.",
+        "professional": "Delegation and hiring well are core skills for managers in every Nigerian company and NGO."
+      },
+      "deeper": "Groups of thousands, hundreds, fifties and tens are an early span-of-control model. Modern managers often lead 5 to 10 people directly."
+    },
+    {
+      "id": "jotham-trees",
+      "realm": "choose",
+      "title": "The Trees Choose a King",
+      "ref": "Judges 9:1-21",
+      "verse": "The trees went forth on a time to anoint a king over them.",
+      "verseRef": "Judges 9:8 (KJV)",
+      "skill": "Spotting people who only want power",
+      "badge": "Bramble Spotter",
+      "story": "Abimelech wanted to rule so badly that he killed his brothers. Only the youngest, Jotham, escaped. Jotham climbed Mount Gerizim and called out a story. The trees wanted a king. They asked the olive tree, but it would not leave its oil. They asked the fig tree, but it would not leave its sweet fruit. They asked the vine, but it would not leave its wine. Then they asked the bramble, a thorny bush with no fruit. The bramble said yes at once: \"Come and put your trust in my shadow: and if not, let fire come out of the bramble.\" Jotham warned that a leader like that would burn everyone, and it happened just as he said.",
+      "guideLine": "That was my story! The good trees were busy being useful. Only the bramble, who had nothing to give, was hungry to rule. Amaka in Enugu has a class prefect election tomorrow. Help her spot the bramble.",
+      "brief": "Some people want leadership to serve others. Some want it for power, money or praise. A \"bramble\" leader promises shade but gives thorns and threats. Learning to spot the difference protects your school, church, business and country.",
+      "careers": ["Class prefect", "Counsellor", "Human resources officer"],
+      "mission": {
+        "type": "sort",
+        "prompt": "In Jotham's story, did each tree turn the job down or grab it?",
+        "bins": ["Turned it down", "Grabbed it"],
+        "items": [
+          { "t": "The olive tree, busy giving oil", "bin": "Turned it down" },
+          { "t": "The fig tree, busy giving sweet fruit", "bin": "Turned it down" },
+          { "t": "The vine, busy giving wine", "bin": "Turned it down" },
+          { "t": "The bramble, which gave nothing but thorns", "bin": "Grabbed it" }
+        ],
+        "hint": "Only one tree said yes straight away."
+      },
+      "challenges": [
+        {
+          "type": "choice",
+          "prompt": "Three classmates want to be prefect. Which one sounds most like the bramble?",
+          "options": [
+            "Ada, who already helps slow readers after school",
+            "Obi, who says \"Vote for me or you'll be sorry\" and promises free sweets",
+            "Chioma, who cleans the class without being asked",
+            "Emeka, who listens to everyone before speaking"
+          ],
+          "a": 1,
+          "why": "Threats plus bribes are the bramble's way: \"trust in my shadow, and if not, let fire come out\"."
+        },
+        {
+          "type": "order",
+          "prompt": "Put the trees in the order the story asks them.",
+          "items": ["Olive tree", "Fig tree", "Vine", "Bramble"],
+          "hint": "Oil, then fruit, then wine, then the thorny bush."
+        },
+        {
+          "type": "sort",
+          "prompt": "Is each promise a SERVANT promise or a BRAMBLE promise?",
+          "bins": ["Servant", "Bramble"],
+          "items": [
+            { "t": "\"I will make a rota so everyone shares the cleaning, me too.\"", "bin": "Servant" },
+            { "t": "\"Anyone who doesn't vote for me will be punished.\"", "bin": "Bramble" },
+            { "t": "\"I will tell the teacher what the class needs, even if it's hard.\"", "bin": "Servant" },
+            { "t": "\"Give me your vote and I'll give you ₦200.\"", "bin": "Bramble" }
+          ]
+        }
+      ],
+      "quiz": [
+        { "q": "Who told the story of the trees?", "options": ["Gideon", "Jotham", "Samuel", "David"], "a": 1, "why": "Jotham, Gideon's youngest son (Judges 9:7)." },
+        { "q": "Which tree agreed to be king?", "options": ["Olive", "Fig", "Vine", "Bramble"], "a": 3, "why": "The bramble, which had no fruit to give." },
+        { "q": "Why did the olive tree say no?", "options": ["It was lazy", "It did not want to leave its oil, which honours God and man", "It was afraid", "It was too young"], "a": 1, "why": "Judges 9:9. Useful people are often busy serving." },
+        { "q": "What did the bramble threaten?", "options": ["Rain", "Fire", "A flood", "Silence"], "a": 1, "why": "\"Let fire come out of the bramble\" (Judges 9:15)." },
+        { "q": "A candidate offers money for your vote. This is…", "options": ["Kind", "Bribery, the bramble's way", "Normal campaigning", "A prize"], "a": 1, "why": "Buying votes is wrong, and in Nigerian elections it is a crime." }
+      ],
+      "benefits": {
+        "faith": "God sees through power-grabbing. Jotham's warning came true (Judges 9:56-57).",
+        "personal": "You can recognise threats, bribes and empty promises, at school and on social media.",
+        "professional": "HR officers, recruiters and board members use the same judgement to avoid hiring \"brambles\"."
+      },
+      "deeper": "Jotham's speech is one of the Bible's earliest political warnings. Discuss: why do the most useful people sometimes avoid leadership, and how can a community encourage them?"
+    },
+    {
+      "id": "heart-not-height",
+      "realm": "choose",
+      "title": "The Heart, Not the Height",
+      "ref": "1 Samuel 16:1-13",
+      "verse": "For the LORD seeth not as man seeth; for man looketh on the outward appearance, but the LORD looketh on the heart.",
+      "verseRef": "1 Samuel 16:7 (KJV)",
+      "skill": "Judging character, not looks",
+      "badge": "Heart Reader",
+      "story": "God sent Samuel to Jesse's house in Bethlehem to anoint a new king. Samuel saw Eliab, tall and handsome, and thought, \"Surely this is the one.\" But God said: \"Look not on his countenance, or on the height of his stature… for the LORD seeth not as man seeth.\" Seven sons passed by, and God chose none of them. \"Are here all thy children?\" Samuel asked. The youngest, David, was out keeping the sheep. When David came, God said: \"Arise, anoint him: for this is he.\"",
+      "guideLine": "Even a great prophet was fooled by height! In Kaduna, Musa's football team must pick a captain. The tallest boy wants it. Let's look at their hearts instead.",
+      "brief": "Looks, money, accent, tribe and fame can fool us. Character shows in what people do when no one is watching: how they treat the weakest, whether they keep promises, and whether they work hard in small things, like David with the sheep.",
+      "careers": ["Team captain", "Human resources officer", "Mentor"],
+      "mission": {
+        "type": "sort",
+        "prompt": "Is each clue about OUTWARD APPEARANCE or about the HEART?",
+        "bins": ["Outward appearance", "The heart"],
+        "items": [
+          { "t": "He is the tallest on the team", "bin": "Outward appearance" },
+          { "t": "She comes early to set out the cones", "bin": "The heart" },
+          { "t": "He has the most expensive boots", "bin": "Outward appearance" },
+          { "t": "She encourages players who make mistakes", "bin": "The heart" },
+          { "t": "He has many followers online", "bin": "Outward appearance" },
+          { "t": "He tells the coach the truth about his own foul", "bin": "The heart" }
+        ]
+      },
+      "challenges": [
+        {
+          "type": "numeric",
+          "prompt": "Jesse made seven of his sons pass before Samuel (1 Samuel 16:10). Then David was fetched from the sheep. How many sons were there in all?",
+          "answer": 8,
+          "unit": "sons",
+          "hint": "7 + 1"
+        },
+        {
+          "type": "chart",
+          "prompt": "Coach Bello kept a record for the term.",
+          "bars": [
+            { "label": "Ibrahim: trainings attended", "value": 6 },
+            { "label": "Sani: trainings attended", "value": 19 },
+            { "label": "Yusuf: trainings attended", "value": 11 }
+          ],
+          "question": "Ibrahim is tallest. Who has shown the most faithfulness in small things?",
+          "options": ["Ibrahim", "Sani", "Yusuf"],
+          "a": 1,
+          "why": "Sani came to 19 trainings. Like David with the sheep, faithfulness in small things shows the heart."
+        },
+        {
+          "type": "choice",
+          "prompt": "Which question helps you see a person's heart?",
+          "options": ["\"How much does your phone cost?\"", "\"How do you treat people who can't do anything for you?\"", "\"How tall are you?\"", "\"Who is your father?\""],
+          "a": 1,
+          "why": "How someone treats the powerless is a strong clue to their character."
+        }
+      ],
+      "quiz": [
+        { "q": "Which son did Samuel first think God would choose?", "options": ["David", "Eliab", "Jonathan", "Saul"], "a": 1, "why": "Eliab, who was tall (1 Samuel 16:6)." },
+        { "q": "What does God look at?", "options": ["Height", "Clothes", "The heart", "Wealth"], "a": 2, "why": "1 Samuel 16:7." },
+        { "q": "Where was David when Samuel came?", "options": ["At school", "Keeping the sheep", "In the palace", "At the market"], "a": 1, "why": "He was the youngest, faithfully keeping the sheep (16:11)." },
+        { "q": "Which is a HEART quality?", "options": ["Expensive shoes", "Kindness to the weakest", "A famous family", "A loud voice"], "a": 1, "why": "Character shows in how we treat others." },
+        { "q": "In which town did Jesse live?", "options": ["Jerusalem", "Bethlehem", "Nazareth", "Jericho"], "a": 1, "why": "Samuel went to Jesse the Bethlehemite (16:1)." }
+      ],
+      "benefits": {
+        "faith": "God sees and values you for your heart, even if others overlook you.",
+        "personal": "You will choose better friends and avoid people who only look good on the outside.",
+        "professional": "Good recruiters and team leaders judge track record and character, not looks or connections."
+      }
+    },
+    {
+      "id": "uzziah",
+      "realm": "jotham",
+      "title": "Uzziah: Strong Until Proud",
+      "ref": "2 Chronicles 26",
+      "verse": "But when he was strong, his heart was lifted up to his destruction.",
+      "verseRef": "2 Chronicles 26:16 (KJV)",
+      "skill": "Success without pride; accepting correction",
+      "badge": "Humble Builder",
+      "story": "Uzziah became king of Judah at just sixteen and reigned fifty-two years. \"As long as he sought the LORD, God made him to prosper.\" He built towers, dug many wells, loved farming, and had clever engines made to shoot arrows and great stones. His fame spread far. But when he was strong, his heart was lifted up. He walked into the temple to burn incense, which only the priests were allowed to do. Azariah and eighty brave priests stood up to him. Uzziah grew angry, and leprosy broke out on his forehead. He lived apart until he died, and his son Jotham led the people.",
+      "guideLine": "Here begins the line of a different Jotham, the king! Matthew 1 lists it: Ozias begat Joatham. Chidi in Owerri was the best student and became class representative. Now he skips duties and ignores his teacher's advice. Let's see what Uzziah can teach him.",
+      "brief": "Success can be dangerous when it makes a leader proud. Uzziah forgot that rules and accountability apply to the top person too. Good leaders welcome correction, even when it comes from people \"below\" them.",
+      "careers": ["Engineer", "Project manager", "Class prefect"],
+      "mission": {
+        "type": "order",
+        "prompt": "Put Uzziah's story in order.",
+        "items": [
+          "Becomes king at 16",
+          "Seeks the LORD and prospers",
+          "Builds towers, wells and engines",
+          "His heart is lifted up with pride",
+          "Burns incense in the temple; 80 priests stand up to him",
+          "Lives apart with leprosy; Jotham leads the people"
+        ],
+        "hint": "Good start, great success, then pride."
+      },
+      "challenges": [
+        {
+          "type": "numeric",
+          "prompt": "Uzziah became king at 16 and reigned 52 years. How old was he when his reign ended?",
+          "answer": 68,
+          "unit": "years old",
+          "hint": "16 + 52"
+        },
+        {
+          "type": "sort",
+          "prompt": "Was each of Chidi's actions HUMBLE or PROUD?",
+          "bins": ["Humble", "Proud"],
+          "items": [
+            { "t": "Thanks the teacher for pointing out his mistake", "bin": "Humble" },
+            { "t": "Says \"Rules are for other students, not the class rep\"", "bin": "Proud" },
+            { "t": "Asks quieter classmates what they need", "bin": "Humble" },
+            { "t": "Shouts at the student who reported a problem", "bin": "Proud" }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "Azariah and the priests corrected the king. What does that teach about leadership?",
+          "options": ["Only the top person can be right", "Good systems let honest people correct even the most powerful", "Never disagree with a leader", "Priests should be kings"],
+          "a": 1,
+          "why": "Accountability protects everyone, including the leader. Uzziah's anger made things worse."
+        }
+      ],
+      "quiz": [
+        { "q": "How old was Uzziah when he became king?", "options": ["8", "16", "25", "30"], "a": 1, "why": "2 Chronicles 26:1, 3." },
+        { "q": "When did God make Uzziah prosper?", "options": ["When he was rich", "As long as he sought the LORD", "When he was angry", "Always"], "a": 1, "why": "2 Chronicles 26:5." },
+        { "q": "What was Uzziah's big mistake?", "options": ["Building wells", "Pride: doing the priests' job in the temple", "Loving farming", "Making engines"], "a": 1, "why": "His heart was lifted up (26:16)." },
+        { "q": "How many priests went in with Azariah?", "options": ["Twelve", "Forty", "Fourscore (80)", "A thousand"], "a": 2, "why": "\"Fourscore priests of the LORD, that were valiant men\" (26:17)." },
+        { "q": "Who judged the people while Uzziah was sick?", "options": ["Jotham his son", "Isaiah", "Azariah", "Ahaz"], "a": 0, "why": "2 Chronicles 26:21." }
+      ],
+      "benefits": {
+        "faith": "Keep seeking God after success, not only when you are struggling.",
+        "personal": "Accepting correction calmly helps you keep friendships and keep growing.",
+        "professional": "Companies need leaders who follow the same rules as everyone else and welcome audits and feedback."
+      },
+      "deeper": "\"Engines, invented by cunning men\" (26:15) shows Uzziah valued engineering. Innovation is good; pride is the danger."
+    },
+    {
+      "id": "jotham-king",
+      "realm": "jotham",
+      "title": "Jotham: Prepared His Ways",
+      "ref": "2 Chronicles 27; 2 Kings 15:32-38",
+      "verse": "So Jotham became mighty, because he prepared his ways before the LORD his God.",
+      "verseRef": "2 Chronicles 27:6 (KJV)",
+      "skill": "Consistency, planning & honest records",
+      "badge": "Steady Steward",
+      "story": "Jotham became king at twenty-five and reigned sixteen years. He did what was right, like his father Uzziah had done at first, but he learned from his father's mistake and did not go into the temple where he should not. He built the high gate of the LORD's house, built cities, castles and towers, and Judah grew strong. The Bible says Jotham became mighty \"because he prepared his ways before the LORD his God.\" Yet there was still work left undone: the high places of idol worship were not removed, \"and the people did yet corruptly.\"",
+      "guideLine": "My namesake! King Jotham learned from his father's fall and planned his life carefully. Ngozi in Onitsha is the new treasurer of her market women's cooperative. She wants to be steady and trusted, just like Jotham.",
+      "brief": "Jotham's strength came from preparation: daily habits, careful plans and learning from the past. But being personally good is not enough. A leader must also fix the systems that let wrong things continue, like the high places Jotham left standing.",
+      "careers": ["Cooperative treasurer", "Accountant or auditor", "Project manager"],
+      "mission": {
+        "type": "order",
+        "prompt": "Help Ngozi \"prepare her ways\". Put her treasurer routine in order.",
+        "items": [
+          "Pray and plan the week",
+          "Record every contribution the day it is paid",
+          "Give each member a receipt",
+          "Count the cash and match it to the record book",
+          "Show the totals to everyone at the monthly meeting"
+        ],
+        "hint": "Plan, then record, then receipt, then check, then report."
+      },
+      "challenges": [
+        {
+          "type": "numeric",
+          "prompt": "Jotham became king at 25 and reigned 16 years. How old was he at the end of his reign?",
+          "answer": 41,
+          "unit": "years old",
+          "hint": "25 + 16"
+        },
+        {
+          "type": "chart",
+          "prompt": "Ngozi's record book shows what the 20 members paid each month (₦).",
+          "bars": [
+            { "label": "January", "value": 100000 },
+            { "label": "February", "value": 100000 },
+            { "label": "March", "value": 80000 }
+          ],
+          "question": "Each member pays ₦5,000 a month. What does March tell Ngozi?",
+          "options": ["Everything is fine", "₦20,000 is missing: 4 members have not paid, or there is an error to check", "She should hide the record", "She should pay it herself secretly"],
+          "a": 1,
+          "why": "20 × ₦5,000 = ₦100,000. Honest records show problems early so they can be fixed openly."
+        },
+        {
+          "type": "sort",
+          "prompt": "Is each action PERSONAL goodness or FIXING THE SYSTEM? (Good leaders need both.)",
+          "bins": ["Personal goodness", "Fixing the system"],
+          "items": [
+            { "t": "Ngozi never takes cooperative money for herself", "bin": "Personal goodness" },
+            { "t": "Ngozi makes two members co-sign every withdrawal", "bin": "Fixing the system" },
+            { "t": "Ngozi is always polite at meetings", "bin": "Personal goodness" },
+            { "t": "Ngozi publishes the accounts every month", "bin": "Fixing the system" }
+          ]
+        }
+      ],
+      "quiz": [
+        { "q": "Why did Jotham become mighty?", "options": ["He was lucky", "He prepared his ways before the LORD", "He was tall", "He had many soldiers"], "a": 1, "why": "2 Chronicles 27:6." },
+        { "q": "What mistake of his father did Jotham avoid?", "options": ["Building wells", "Going into the temple where he should not", "Farming", "Fighting"], "a": 1, "why": "\"He entered not into the temple of the LORD\" (27:2)." },
+        { "q": "What did Jotham build?", "options": ["A golden calf", "The high gate of the LORD's house, cities and towers", "A tower to heaven", "Nothing"], "a": 1, "why": "2 Chronicles 27:3-4." },
+        { "q": "What did Jotham leave undone?", "options": ["He didn't remove the high places", "He didn't build anything", "He didn't pray", "He didn't have a son"], "a": 0, "why": "2 Kings 15:35: the people still sacrificed in the high places." },
+        { "q": "In Matthew 1:9, who did Joatham (Jotham) beget?", "options": ["Ozias", "Achaz (Ahaz)", "Josias", "David"], "a": 1, "why": "\"Joatham begat Achaz.\"" }
+      ],
+      "benefits": {
+        "faith": "Steady daily faithfulness, not one big moment, is what made Jotham strong.",
+        "personal": "Planning your week and keeping records helps with school, savings and every promise you make.",
+        "professional": "Treasurers, accountants and auditors are trusted because of careful records and strong systems."
+      },
+      "deeper": "Jotham was personally upright but tolerated corrupt systems. Discuss: which is harder, being honest yourself or making it hard for anyone to be dishonest?"
+    },
+    {
+      "id": "ahaz",
+      "realm": "jotham",
+      "title": "Ahaz: Fear Makes Bad Choices",
+      "ref": "2 Kings 16; 2 Chronicles 28; Isaiah 7",
+      "verse": "Take heed, and be quiet; fear not, neither be fainthearted.",
+      "verseRef": "Isaiah 7:4 (KJV)",
+      "skill": "Making decisions under pressure",
+      "badge": "Calm Decider",
+      "story": "Jotham's son Ahaz became king at twenty and reigned sixteen years, but he \"did not that which was right\". When two kings attacked, Ahaz's heart shook \"as the trees of the wood are moved with the wind.\" God sent Isaiah to say: \"Take heed, and be quiet; fear not.\" God even offered Ahaz a sign, but Ahaz refused to ask. Instead he took silver and gold from the LORD's house and sent it to the king of Assyria, saying \"I am thy servant.\" Things got worse. \"In the time of his distress did he trespass yet more,\" and at last he shut the doors of the temple.",
+      "guideLine": "Ahaz was the son of a good king, but goodness is not passed down automatically. Tunde leads the student union in Ilorin. A crisis has hit, and a shady sponsor offers a quick fix. Help Tunde stay calm.",
+      "brief": "Panic makes leaders grab quick fixes, break rules and give away what isn't theirs. Isaiah's advice still works: stop, stay calm, trust God, get the facts and wise counsel, then decide. Ahaz paid a bribe with temple treasure, and it bought him trouble.",
+      "careers": ["Crisis manager", "Student union leader", "Compliance officer"],
+      "mission": {
+        "type": "order",
+        "prompt": "Put Tunde's calm decision steps in order.",
+        "items": [
+          "Stop and stay calm (\"be quiet; fear not\")",
+          "Pray and ask for wisdom",
+          "Get the real facts",
+          "Ask wise, honest people for counsel",
+          "List the options and their results",
+          "Decide, then explain the decision openly"
+        ],
+        "hint": "Calm first, decide last."
+      },
+      "challenges": [
+        {
+          "type": "sort",
+          "prompt": "Is each choice FEAR-driven or WISDOM-driven?",
+          "bins": ["Fear-driven", "Wisdom-driven"],
+          "items": [
+            { "t": "Use the union's money to pay the sponsor quietly", "bin": "Fear-driven" },
+            { "t": "Call a meeting and tell members the truth", "bin": "Wisdom-driven" },
+            { "t": "Refuse all advice because there is no time", "bin": "Fear-driven" },
+            { "t": "Ask the staff adviser and check the union's rules", "bin": "Wisdom-driven" }
+          ]
+        },
+        {
+          "type": "numeric",
+          "prompt": "Ahaz became king at 20 and reigned 16 years. How old was he when his reign ended?",
+          "answer": 36,
+          "unit": "years old",
+          "hint": "20 + 16"
+        },
+        {
+          "type": "choice",
+          "prompt": "The sponsor says: \"Sign today or lose the deal. Don't tell anyone.\" What is the red flag?",
+          "options": ["The sponsor is friendly", "Pressure plus secrecy: a sign of a bad deal or a scam", "The deal is in naira", "It's on a weekday"],
+          "a": 1,
+          "why": "Urgency and secrecy are classic warning signs, in business and in online scams."
+        }
+      ],
+      "quiz": [
+        { "q": "Whose son was Ahaz?", "options": ["Hezekiah", "Jotham", "Josiah", "David"], "a": 1, "why": "2 Kings 16:1; Matthew 1:9." },
+        { "q": "What did Isaiah tell Ahaz?", "options": ["Run away", "Take heed, and be quiet; fear not", "Pay the enemy", "Build a wall"], "a": 1, "why": "Isaiah 7:4." },
+        { "q": "What did Ahaz send to the king of Assyria?", "options": ["Soldiers", "Silver and gold from the LORD's house", "A letter of thanks", "Food"], "a": 1, "why": "2 Kings 16:8." },
+        { "q": "What happened \"in the time of his distress\"?", "options": ["He repented", "He trespassed yet more", "He prayed", "He resigned"], "a": 1, "why": "2 Chronicles 28:22." },
+        { "q": "What is the best first step in a crisis?", "options": ["Panic", "Stop, stay calm and get the facts", "Blame someone", "Hide it"], "a": 1, "why": "Calm leaders make better choices." }
+      ],
+      "benefits": {
+        "faith": "God offers peace and guidance in a crisis. Ahaz's mistake was refusing it.",
+        "personal": "You can spot pressure tactics in scams, peer pressure and bad deals.",
+        "professional": "Crisis managers and compliance officers are valued for staying calm and keeping to the rules under pressure."
+      }
+    },
+    {
+      "id": "hezekiah",
+      "realm": "jotham",
+      "title": "Hezekiah: Open the Doors",
+      "ref": "2 Kings 18-20; 2 Chronicles 29-32",
+      "verse": "He trusted in the LORD God of Israel.",
+      "verseRef": "2 Kings 18:5 (KJV)",
+      "skill": "Reform, prayer & planning for the future",
+      "badge": "Door Opener",
+      "story": "Hezekiah, son of Ahaz, became king at twenty-five and reigned twenty-nine years. In the very first month of his reign he opened the doors of the LORD's house that his father had shut, and repaired them. He broke the old brass serpent that people had turned into an idol. When the Assyrian army surrounded Jerusalem, he spread their threatening letter before the LORD and prayed, and God saved the city. He even had a tunnel dug to bring water inside the walls. But later, proud of his treasures, he showed them all to visitors from Babylon. Isaiah warned that Babylon would one day take them, and Hezekiah answered: \"Is it not good, if peace and truth be in my days?\"",
+      "guideLine": "From a fearful father came a brave son! A family can change direction in one generation. Halima in Maiduguri leads her community's water committee before the dry season. Let's learn from Hezekiah's planning, and from his one blind spot.",
+      "brief": "Hezekiah fixed what was broken quickly, prayed in trouble and planned for water before the siege. His weakness was thinking only about his own lifetime. Great leaders think about the next generation too.",
+      "careers": ["Water project coordinator", "Community development officer", "Engineer"],
+      "mission": {
+        "type": "order",
+        "prompt": "Put Hezekiah's story in order.",
+        "items": [
+          "Opens and repairs the temple doors in his first month",
+          "Breaks the brass serpent that people worshipped",
+          "Digs a tunnel to bring water into Jerusalem",
+          "Spreads the enemy's letter before the LORD and prays",
+          "Shows all his treasures to the visitors from Babylon"
+        ],
+        "hint": "He started with the doors. The proud moment came near the end."
+      },
+      "challenges": [
+        {
+          "type": "numeric",
+          "prompt": "Halima's community of 600 people needs 20 litres of water each per day. How many litres a day is that?",
+          "answer": 12000,
+          "unit": "litres",
+          "hint": "600 × 20"
+        },
+        {
+          "type": "choice",
+          "prompt": "\"Is it not good, if peace and truth be in my days?\" What was wrong with Hezekiah's answer?",
+          "options": ["Nothing at all", "He only cared about his own lifetime, not the next generation", "He wanted war", "He forgot to pray that day"],
+          "a": 1,
+          "why": "Good leaders plan for those who come after them."
+        },
+        {
+          "type": "sort",
+          "prompt": "Is each of Halima's plans SHORT-TERM ONLY or does it also help the NEXT GENERATION?",
+          "bins": ["Short-term only", "Next generation too"],
+          "items": [
+            { "t": "Buy water from tankers this week", "bin": "Short-term only" },
+            { "t": "Train young people to repair the borehole pump", "bin": "Next generation too" },
+            { "t": "Plant trees and protect the water source", "bin": "Next generation too" },
+            { "t": "Spend all the savings on a big launch party", "bin": "Short-term only" }
+          ]
+        }
+      ],
+      "quiz": [
+        { "q": "What did Hezekiah do in his first month as king?", "options": ["Built a palace", "Opened and repaired the doors of the LORD's house", "Went to war", "Paid Assyria"], "a": 1, "why": "2 Chronicles 29:3." },
+        { "q": "What did Hezekiah do with the enemy's letter?", "options": ["Burned it", "Spread it before the LORD and prayed", "Ignored it", "Signed it"], "a": 1, "why": "2 Kings 19:14-19." },
+        { "q": "Why did Hezekiah dig a tunnel?", "options": ["To escape", "To bring water into the city", "To hide treasure", "For a parade"], "a": 1, "why": "2 Chronicles 32:30 (the watercourse of Gihon)." },
+        { "q": "Whose son was Hezekiah?", "options": ["Josiah", "Ahaz", "Uzziah", "Amon"], "a": 1, "why": "Matthew 1:9: Achaz begat Ezekias." },
+        { "q": "What was Hezekiah's blind spot?", "options": ["He never prayed", "Pride, and thinking only about his own days", "He was lazy", "He was too young"], "a": 1, "why": "2 Kings 20:13-19; 2 Chronicles 32:25." }
+      ],
+      "benefits": {
+        "faith": "No matter what your family did before, you can open the doors to God again.",
+        "personal": "Fix problems quickly, pray in trouble, and plan for the people who come after you.",
+        "professional": "Water, infrastructure and development professionals plan systems that last for decades."
+      },
+      "deeper": "Hezekiah's tunnel, cut through solid rock, still exists in Jerusalem today. Look up how two teams dug from opposite ends and met in the middle."
+    },
+    {
+      "id": "manasseh",
+      "realm": "jotham",
+      "title": "Manasseh: Can a Leader Change?",
+      "ref": "2 Chronicles 33",
+      "verse": "And when he was in affliction, he besought the LORD his God, and humbled himself greatly.",
+      "verseRef": "2 Chronicles 33:12 (KJV)",
+      "skill": "Repentance, trust & making things right",
+      "badge": "Way Maker",
+      "story": "Hezekiah's son Manasseh became king at only twelve and reigned fifty-five years, longer than any other king of Judah. For many years he undid his father's good work and led the people into evil. Then he was captured and carried in chains to Babylon. In that trouble, he humbled himself greatly and prayed, and God heard him and brought him home. Then Manasseh knew that the LORD He was God. He removed the idols and repaired the LORD's altar. But the damage was deep: the people kept sacrificing in the high places. His son Amon became king and did evil, but \"humbled not himself\" as his father had, and he reigned only two years.",
+      "guideLine": "Good fathers can have wayward sons, and wayward leaders can change! Bayo is captain of his school's debate team in Abeokuta. He cheated, got caught, and now wants to make it right. Real change is more than saying sorry.",
+      "brief": "God forgives anyone who truly turns back to Him, even the worst king of Judah. But trust is rebuilt slowly, by actions over time, and some damage takes a long time to repair. When choosing a leader, look for real change: owning the wrong, repairing it and staying consistent.",
+      "careers": ["Counsellor", "Mentor", "Pastor or church elder"],
+      "mission": {
+        "type": "sort",
+        "prompt": "Is each sign REAL CHANGE or just SORRY I GOT CAUGHT?",
+        "bins": ["Real change", "Sorry I got caught"],
+        "items": [
+          { "t": "Bayo admits exactly what he did, without blaming others", "bin": "Real change" },
+          { "t": "\"Everybody does it, so it's not a big deal\"", "bin": "Sorry I got caught" },
+          { "t": "He returns the prize and apologises to the other team", "bin": "Real change" },
+          { "t": "He is sorry for one day, then cheats again", "bin": "Sorry I got caught" },
+          { "t": "He asks a teacher to check his work for the rest of the term", "bin": "Real change" }
+        ]
+      },
+      "challenges": [
+        {
+          "type": "numeric",
+          "prompt": "Manasseh became king at 12 and reigned 55 years. How old was he at the end of his reign?",
+          "answer": 67,
+          "unit": "years old",
+          "hint": "12 + 55"
+        },
+        {
+          "type": "order",
+          "prompt": "Put the Jotham line in order, from Matthew 1:9-10.",
+          "items": ["Uzziah (Ozias)", "Jotham (Joatham)", "Ahaz (Achaz)", "Hezekiah (Ezekias)", "Manasseh (Manasses)", "Amon", "Josiah (Josias)"],
+          "hint": "Ozias begat Joatham; Joatham begat Achaz; Achaz begat Ezekias…"
+        },
+        {
+          "type": "choice",
+          "prompt": "Manasseh and his son Amon both did evil. What was the difference?",
+          "options": ["Manasseh was taller", "Manasseh humbled himself and turned back to God; Amon did not", "Amon reigned longer", "There was no difference"],
+          "a": 1,
+          "why": "2 Chronicles 33:23: Amon \"humbled not himself before the LORD, as Manasseh his father had humbled himself\"."
+        }
+      ],
+      "quiz": [
+        { "q": "How old was Manasseh when he became king?", "options": ["8", "12", "16", "25"], "a": 1, "why": "2 Chronicles 33:1." },
+        { "q": "Where was Manasseh taken as a captive?", "options": ["Egypt", "Babylon", "Nineveh", "Damascus"], "a": 1, "why": "2 Chronicles 33:11." },
+        { "q": "What did Manasseh do in his affliction?", "options": ["Gave up", "Humbled himself greatly and prayed", "Blamed his father", "Ran away"], "a": 1, "why": "2 Chronicles 33:12." },
+        { "q": "What shows real change?", "options": ["Saying sorry once", "Owning the wrong, repairing it and staying consistent", "Hiding the mistake", "Changing your name"], "a": 1, "why": "Trust is rebuilt with actions over time." },
+        { "q": "How long did Amon reign?", "options": ["Two years", "Twenty years", "Fifty-five years", "One month"], "a": 0, "why": "2 Chronicles 33:21." }
+      ],
+      "benefits": {
+        "faith": "No one is too far gone to come back to God.",
+        "personal": "You know how to make things right after a mistake, and how to judge whether someone has really changed.",
+        "professional": "Leaders who own mistakes, fix them and add checks are trusted with bigger responsibilities."
+      }
+    },
+    {
+      "id": "josiah",
+      "realm": "jotham",
+      "title": "Josiah: Young and Faithful",
+      "ref": "2 Kings 22-23; 2 Chronicles 34",
+      "verse": "And he did that which was right in the sight of the LORD… and turned not aside to the right hand or to the left.",
+      "verseRef": "2 Kings 22:2 (KJV)",
+      "skill": "Young leadership & acting on the truth",
+      "badge": "Young Reformer",
+      "story": "Amon's son Josiah became king when he was just eight years old, and he reigned thirty-one years. At sixteen, \"while he was yet young, he began to seek after the God of David his father.\" He cleaned the land of idols and set workers to repair the LORD's house. The workers were so honest that no one needed to check the money they were given, \"because they dealt faithfully.\" Then the priest Hilkiah found the book of the law. When it was read to Josiah, he tore his clothes in sorrow. He gathered all the people, read the book to them, and led them to promise to follow God with all their heart.",
+      "guideLine": "Here the Jotham line reaches Josiah, a king who started at eight! Being young is no excuse. Aisha in Kano is fifteen and has just been chosen to lead her school press club. Let's see what Josiah did with the truth.",
+      "brief": "Josiah shows that young people can lead well. He sought God early, chose trustworthy workers, and when he discovered the truth he acted on it at once, even though it meant big changes. Honest workers earned so much trust that their money did not need checking.",
+      "careers": ["Editor or journalist", "Compliance officer", "Class prefect"],
+      "mission": {
+        "type": "order",
+        "prompt": "Put Josiah's life in order.",
+        "items": [
+          "Becomes king at 8",
+          "Begins to seek God at 16",
+          "Cleans the land of idols",
+          "Repairs the LORD's house with honest workers",
+          "The book of the law is found",
+          "Reads it to all the people and makes a covenant"
+        ],
+        "hint": "Young king, seeking God, cleaning up, repairing, the book, the promise."
+      },
+      "challenges": [
+        {
+          "type": "numeric",
+          "prompt": "Josiah became king at 8 and reigned 31 years. How old was he at the end of his reign?",
+          "answer": 39,
+          "unit": "years old",
+          "hint": "8 + 31"
+        },
+        {
+          "type": "choice",
+          "prompt": "Josiah's workers were given money with no checking, \"because they dealt faithfully\". What earns that kind of trust?",
+          "options": ["Being popular", "A long record of honesty", "Having rich parents", "Talking a lot"],
+          "a": 1,
+          "why": "Trust is built by faithful actions over time (2 Kings 22:7)."
+        },
+        {
+          "type": "sort",
+          "prompt": "Aisha finds out a story in the school magazine was false. Is each choice ACTING ON THE TRUTH or HIDING IT?",
+          "bins": ["Acting on the truth", "Hiding it"],
+          "items": [
+            { "t": "Print a correction in the next issue", "bin": "Acting on the truth" },
+            { "t": "Say nothing because it was before she was leader", "bin": "Hiding it" },
+            { "t": "Apologise to the student who was wrongly named", "bin": "Acting on the truth" },
+            { "t": "Set a rule that every story is checked by two people", "bin": "Acting on the truth" }
+          ]
+        }
+      ],
+      "quiz": [
+        { "q": "How old was Josiah when he became king?", "options": ["8", "12", "16", "20"], "a": 0, "why": "2 Kings 22:1." },
+        { "q": "What was found in the LORD's house?", "options": ["Gold", "The book of the law", "A sword", "A crown"], "a": 1, "why": "Hilkiah found the book of the law (2 Kings 22:8)." },
+        { "q": "What did Josiah do when he heard the book read?", "options": ["Laughed", "Tore his clothes and acted on it", "Hid it", "Sold it"], "a": 1, "why": "2 Kings 22:11; 23:1-3." },
+        { "q": "Why was no check needed on the workers' money?", "options": ["They were rich", "They dealt faithfully", "Nobody cared", "It was a secret"], "a": 1, "why": "2 Kings 22:7." },
+        { "q": "Who was Josiah's father?", "options": ["Hezekiah", "Manasseh", "Amon", "Ahaz"], "a": 2, "why": "Matthew 1:10: Amon begat Josias." }
+      ],
+      "benefits": {
+        "faith": "You don't have to wait until you're older to seek God and lead well.",
+        "personal": "When you discover you were wrong, acting quickly on the truth builds respect.",
+        "professional": "Journalists, auditors and compliance officers protect organisations by checking facts and acting on what they find."
+      }
+    },
+    {
+      "id": "choose-seven",
+      "realm": "servant",
+      "title": "Choose Seven of Honest Report",
+      "ref": "Acts 6:1-7; Mark 10:42-45",
+      "verse": "Look ye out among you seven men of honest report, full of the Holy Ghost and wisdom, whom we may appoint over this business.",
+      "verseRef": "Acts 6:3 (KJV)",
+      "skill": "Voting wisely & servant leadership",
+      "badge": "Faithful Voter",
+      "story": "The early church was growing fast, and some widows were being left out when food was shared each day. The apostles did not ignore the complaint. They told the people: \"Look ye out among you seven men of honest report, full of the Holy Ghost and wisdom.\" The whole group chose seven, including Stephen, and the apostles prayed and laid hands on them. The problem was solved, and the word of God spread. Jesus had already taught what kind of leader to choose: \"Whosoever will be great among you, shall be your minister: and whosoever of you will be chief, shall be servant of all.\"",
+      "guideLine": "You have walked the whole Jotham line. Now it's your turn to choose! Ebi in Yenagoa is voting for school senior prefect, and one day she will vote in Nigeria's elections. Let's put everything together.",
+      "brief": "Good choosing has three parts: know the need, check the candidates' honest record, then choose a servant, not a bramble. In Nigeria, citizens aged 18 and over can register with INEC, collect a Permanent Voter Card (PVC) and vote. Selling or buying votes is against the law.",
+      "careers": ["Electoral officer", "Civic educator", "Community development officer"],
+      "mission": {
+        "type": "chart",
+        "prompt": "Ebi checks each candidate's record this term: times they helped the school without being asked.",
+        "bars": [
+          { "label": "Doubra (gave out free phone credit)", "value": 2 },
+          { "label": "Tamara (tutors juniors, cleans the chapel)", "value": 14 },
+          { "label": "Preye (most followers online)", "value": 4 }
+        ],
+        "question": "Using Acts 6:3, who has the most \"honest report\" of service?",
+        "options": ["Doubra", "Tamara", "Preye"],
+        "a": 1,
+        "why": "Tamara's record of service is the strongest. Gifts and followers are not the same as a good report."
+      },
+      "challenges": [
+        {
+          "type": "sort",
+          "prompt": "When you are 18 and voting in Nigeria: is each action something to DO or NEVER DO?",
+          "bins": ["Do", "Never do"],
+          "items": [
+            { "t": "Register with INEC and collect your PVC", "bin": "Do" },
+            { "t": "Sell your vote for money or food", "bin": "Never do" },
+            { "t": "Compare candidates' records and plans", "bin": "Do" },
+            { "t": "Vote more than once", "bin": "Never do" },
+            { "t": "Pray, then vote peacefully", "bin": "Do" },
+            { "t": "Threaten people to vote your way", "bin": "Never do" }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "From what age can a Nigerian citizen vote in general elections?",
+          "options": ["16", "18", "21", "25"],
+          "a": 1,
+          "why": "You must be 18 or older and registered with INEC."
+        },
+        {
+          "type": "choice",
+          "prompt": "Jesus said the chief among you shall be…",
+          "options": ["The richest of all", "The servant of all", "The loudest of all", "The tallest of all"],
+          "a": 1,
+          "why": "Mark 10:44. A servant leader is the opposite of a bramble."
+        }
+      ],
+      "quiz": [
+        { "q": "What problem did the early church face in Acts 6?", "options": ["No money", "Some widows were left out of the daily food", "A storm", "No buildings"], "a": 1, "why": "Acts 6:1." },
+        { "q": "How many helpers were chosen?", "options": ["Three", "Seven", "Twelve", "Seventy"], "a": 1, "why": "Acts 6:3." },
+        { "q": "What qualities did the apostles ask for?", "options": ["Rich and famous", "Honest report, full of the Holy Ghost and wisdom", "Tall and strong", "Good singers"], "a": 1, "why": "Acts 6:3." },
+        { "q": "What card do Nigerian voters need?", "options": ["NIN slip only", "Permanent Voter Card (PVC)", "ATM card", "School ID"], "a": 1, "why": "INEC issues the PVC to registered voters." },
+        { "q": "Which proverb sums up this game?", "options": ["\"When the righteous are in authority, the people rejoice\"", "\"Money answereth all things\"", "\"Eat, drink and be merry\"", "\"Every man for himself\""], "a": 0, "why": "Proverbs 29:2." }
+      ],
+      "benefits": {
+        "faith": "God wants His people to choose leaders who serve, and to be servant leaders themselves.",
+        "personal": "You are ready to vote wisely in school today and in Nigeria's elections at 18.",
+        "professional": "Every organisation needs people who can run fair selections and lead by serving."
+      },
+      "deeper": "\"When the righteous are in authority, the people rejoice: but when the wicked beareth rule, the people mourn\" (Proverbs 29:2). Discuss: what can young people do now, years before they can vote?"
+    }
+  ]
+}

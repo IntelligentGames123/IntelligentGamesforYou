@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noah's Ark Builder — Intelligent Games 4U</title>
+<meta name="description" content="Build Noah's ark from God's own measurements: shapes, perimeter, area, volume and patterns. A Bible-based maths game by Intelligent Games 4U Limited.">
+<meta name="theme-color" content="#14213d">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="../" aria-label="Intelligent Games 4U home">
+      <img src="../assets/logo.svg" alt="" width="44" height="44">
+      <span class="brand-text">Intelligent Games <b>4U</b></span>
+    </a>
+    <a class="btn btn-small" href="../#games">All games</a>
+  </div>
+</header>
+
+<main class="section section-alt" id="play">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Geometry &middot; Ages 7&ndash;11 &middot; Genesis 6:14&ndash;16</p>
+      <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">Noah's Ark Builder</h1>
+      <p class="sub">Build the ark with God's own plan. Learn shapes, perimeter, area and volume, and find the patterns in planks, animals and the rainbow. Levels 1 and 2 are free.</p>
+    </div>
+    <div class="game-stage" id="game-stage">
+      <div class="stage-top">
+        <span class="stage-title" id="stage-title"></span>
+        <span class="stage-progress" id="stage-progress"></span>
+        <span class="stage-score">&#x2B50; <b id="stage-score">0</b></span>
+      </div>
+      <div class="progress-bar"><span id="progress-fill"></span></div>
+      <div class="stage-body" id="stage-body" aria-live="polite"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="copy">&copy; <span id="year">2026</span> Intelligent Games 4U Limited &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../#donate">Donate</a></p>
+  </div>
+</footer>
+
+<script src="../js/config.js"></script>
+<script src="js/ark.js"></script>
+<script src="js/player-count.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

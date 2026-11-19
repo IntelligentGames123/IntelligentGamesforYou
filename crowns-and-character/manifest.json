@@ -1,0 +1,18 @@
+{
+  "name": "Crowns & Character: Choosing Good Leaders",
+  "short_name": "Crowns",
+  "description": "Learn to choose good leaders, and to be one, from the leaders of the Bible and the line of Jotham. Set in Nigeria. By Intelligent Games 4U Limited.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "en-NG",
+  "background_color": "#1a1433",
+  "theme_color": "#1a1433",
+  "categories": ["education", "games", "kids"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
